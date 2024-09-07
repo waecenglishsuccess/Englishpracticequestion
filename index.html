@@ -3,14 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Background Color</title>
+    <title>Educational Themed Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Click the Button to Change Background Color</h1>
-        <button id="colorButton">Change Color</button>
-    </div>
-    <script src="script.js"></script>
+
+    <header>
+        <h1>Topic: Sentence Structure and Types
+</h1>
+    </header>
+
+    
+    <section id="video-lecture">
+        <h2>Video Lecture: Sentence Structure and Types</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0bZ8wNfuYA?si=lhgsSq4y9kIDhDd3" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </section>
+
+    
+    <section id="quiz">
+        <h2>Quiz: Sentence Structure and Types</h2>
+        <form id="quiz-form">
+            
+            <div class="question">
+                <p>1. What is a simple sentence?</p>
+                <label><input type="radio" name="q1" value="A"> A sentence with one independent clause</label><br>
+                <label><input type="radio" name="q1" value="B"> A sentence with two dependent clauses</label><br>
+                <label><input type="radio" name="q1" value="C"> A sentence with two independent clauses</label><br>
+                <label><input type="radio" name="q1" value="D"> A sentence with one dependent clause</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>2. Which sentence type asks a question?</p>
+                <label><input type="radio" name="q2" value="A"> Declarative</label><br>
+                <label><input type="radio" name="q2" value="B"> Interrogative</label><br>
+                <label><input type="radio" name="q2" value="C"> Imperative</label><br>
+                <label><input type="radio" name="q2" value="D"> Exclamatory</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>3. What is a compound sentence?</p>
+                <label><input type="radio" name="q3" value="A"> A sentence with one independent clause</label><br>
+                <label><input type="radio" name="q3" value="B"> A sentence with two independent clauses joined by a conjunction</label><br>
+                <label><input type="radio" name="q3" value="C"> A sentence with a dependent and independent clause</label><br>
+                <label><input type="radio" name="q3" value="D"> A sentence with two dependent clauses</label><br>
+                <span class="feedback"></span>
+            </div>
+
+           
+            <div class="question">
+                <p>4. Which sentence is an example of an exclamatory sentence?</p>
+                <label><input type="radio" name="q4" value="A"> It is a sunny day today.</label><br>
+                <label><input type="radio" name="q4" value="B"> What a wonderful day it is!</label><br>
+                <label><input type="radio" name="q4" value="C"> Close the door, please.</label><br>
+                <label><input type="radio" name="q4" value="D"> Can you help me with this?</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>5. What defines a complex sentence?</p>
+                <label><input type="radio" name="q5" value="A"> A sentence with two independent clauses</label><br>
+                <label><input type="radio" name="q5" value="B"> A sentence with one independent clause and one dependent clause</label><br>
+                <label><input type="radio" name="q5" value="C"> A sentence with one independent clause</label><br>
+                <label><input type="radio" name="q5" value="D"> A sentence with two dependent clauses</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>6. Which of the following is an imperative sentence?</p>
+                <label><input type="radio" name="q6" value="A"> I love going to the park.</label><br>
+                <label><input type="radio" name="q6" value="B"> Are you going to the park?</label><br>
+                <label><input type="radio" name="q6" value="C"> Go to the park now.</label><br>
+                <label><input type="radio" name="q6" value="D"> The park is very beautiful.</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>7. Which sentence is a compound-complex sentence?</p>
+                <label><input type="radio" name="q7" value="A"> Although I was tired, I went for a walk, and I enjoyed it.</label><br>
+                <label><input type="radio" name="q7" value="B"> I went for a walk because it was sunny.</label><br>
+                <label><input type="radio" name="q7" value="C"> It is raining, but I still want to go outside.</label><br>
+                <label><input type="radio" name="q7" value="D"> The sun is shining brightly.</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>8. What does an interrogative sentence end with?</p>
+                <label><input type="radio" name="q8" value="A"> A period</label><br>
+                <label><input type="radio" name="q8" value="B"> A question mark</label><br>
+                <label><input type="radio" name="q8" value="C"> An exclamation mark</label><br>
+                <label><input type="radio" name="q8" value="D"> A comma</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>9. Which of the following sentences is declarative?</p>
+                <label><input type="radio" name="q9" value="A"> Open the door.</label><br>
+                <label><input type="radio" name="q9" value="B"> Can you open the door?</label><br>
+                <label><input type="radio" name="q9" value="C"> The door is open.</label><br>
+                <label><input type="radio" name="q9" value="D"> What a beautiful door!</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            
+            <div class="question">
+                <p>10. What is the main function of an imperative sentence?</p>
+                <label><input type="radio" name="q10" value="A"> To express an emotion</label><br>
+                <label><input type="radio" name="q10" value="B"> To give a command or request</label><br>
+                <label><input type="radio" name="q10" value="C"> To ask a question</label><br>
+                <label><input type="radio" name="q10" value="D"> To provide information</label><br>
+                <span class="feedback"></span>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+    </section>
+
+    
+    <section id="assignment">
+        <h2>Assignment: Write a Short Story</h2>
+        <p>Write a short story (50 words) that includes at least one of each type of sentence (Declarative, Interrogative, Imperative, Exclamatory). Also, ensure that your story uses all four sentence structures (Simple, Compound, Complex, Compound-Complex). Highlight the sentences and label them accordingly.</p>
+        <p>Please submit your assignment to: <strong><a href="mailto:waecenglishsuccess@gmail.com">waecenglishsuccess@gmail.com</a></strong></p>
+        <p>If the link does not work, manually send your assignment to waecenglishsuccess@gmail.com</p>
+    </section>
+
+    
+    <section id="donation">
+        <h2>Support Us</h2>
+        <p>If you found this platform helpful, please consider making a donation to help us continue providing free education.</p>
+        <p><strong>PLEASE DONATE</strong></p>
+
+        
+        <div class="donation-info">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" 
+            alt="GTBank Logo" class="logo" width="80">
+            <p>Account Number: <strong>2032202001590</strong></p>
+        </div>
+
+        
+        <div class="donation-info">
+            <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" 
+            alt="Wave Mobile Logo" class="logo" width="100">
+            <p>Phone Number: <strong>3709558</strong></p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
