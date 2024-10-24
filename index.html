@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate to Support Us</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
-    <script src="https://js.paystack.co/v1/inline.js"></script> <!-- Paystack SDK -->
+    <title>Accounting Cycle Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="header">
-        <h1>Support Us with a Donation</h1>
-    </div>
-
     <div class="container">
-        <h2>Make a Donation</h2>
-        <form id="donationForm">
-            <input type="text" id="name" placeholder="Your Name" required><br>
-            <input type="number" id="amount" placeholder="Donation Amount (NGN)" required><br>
-            <input type="submit" value="Donate Now">
-        </form>
+        <h1>Accounting Cycle Quiz</h1>
+        <div id="quiz-container">
+            <div id="question-container">
+                <h2 id="question">Loading question...</h2>
+                <div id="options-container">
+                    <!-- Options will be dynamically added here -->
+                </div>
+            </div>
+            <div id="timer-container">
+                <span id="timer">10</span> seconds left
+            </div>
+            <button id="next-button" class="hidden">Next Question</button>
+        </div>
     </div>
 
-    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+    <!-- Donate Section -->
+    <div class="donate-section">
+        <h2>Please Donate</h2>
+        <p>Your support helps us maintain this platform and continue offering free education.</p>
+        <div class="donate-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1j8_1o20igEk7AJyDYrJ_cH3dBXBr6jwuw&usqp=CAU" alt="Wave Logo" class="wave-logo">
+            <p>Phone Number: <strong>3709558</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
