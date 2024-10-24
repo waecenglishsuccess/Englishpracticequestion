@@ -1,76 +1,62 @@
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+/* Header styling */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
     text-align: center;
 }
 
-section {
-    margin: 20px;
+/* Container for the donation form */
+.container {
+    background-color: white;
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+/* Heading styles */
 h2 {
     color: #333;
 }
 
-.video-container {
-    text-align: center;
-}
-
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-.question {
-    margin-bottom: 20px;
-}
-
-.feedback {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.correct {
-    color: green;
-}
-
-.incorrect {
-    color: red;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+/* Input styling */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-button:hover {
-    background-color: #555;
+/* Button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.donation-info {
-    margin: 20px 0;
-    text-align: center;
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
+/* Alert message styling (if needed for JavaScript validation feedback) */
+.alert {
+    color: red;
+    font-size: 14px;
 }
