@@ -1,34 +1,30 @@
-function checkAnswers() {
-  
-    const answers = {
-        q1: 'A',
-        q2: 'B',
-        q3: 'B',
-        q4: 'B',
-        q5: 'B',
-        q6: 'C',
-        q7: 'A',
-        q8: 'B',
-        q9: 'C',
-        q10: 'B'
-    };
+// Event listener for the donation form
+document.getElementById('donationForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
 
-    const allQuestions = document.querySelectorAll('.question');
-    
-    allQuestions.forEach((question, index) => {
-      
-        const selectedAnswer = document.querySelector(`input[name="q${index + 1}"]:checked`);
-        const feedback = question.querySelector('.feedback');
-        
-        if (selectedAnswer) {
-           
-            if (selectedAnswer.value === answers[`q${index + 1}`]) {
-                feedback.innerHTML = '<span class="correct">✔</span>'; 
-            } else {
-                feedback.innerHTML = '<span class="incorrect">✘</span>';
-            }
-        } else {
-            feedback.innerHTML = 'Please select an answer.'; 
+    // Validate the form inputs
+    let name = document.getElementById('name').value.trim();
+    let amount = document.getElementById('amount').value.trim();
+
+    if (!name || !amount || amount <= 0) {
+        alert('Please fill in your name and a valid donation amount.');
+        return;
+    }
+
+    // Proceed with payment using Paystack
+    let handler = PaystackPop.setup({
+        key: 'your-public-key-here', // Replace with your Paystack public key
+        email: 'donor@example.com',  // Replace with the donor's email (can be dynamically set)
+        amount: amount * 100, // Convert NGN to kobo
+        currency: 'NGN',
+        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Generate a unique reference
+        callback: function(response) {
+            alert('Thank you for your donation! Transaction reference: ' + response.reference);
+        },
+        onClose: function() {
+            alert('Transaction was not completed.');
         }
     });
-}
+
+    handler.openIframe(); // Open the payment window
+});
