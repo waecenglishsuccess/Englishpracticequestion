@@ -1365,8 +1365,6 @@ const quizQuestions = {
     ],
     correct: 1
 },
-const quizQuestions = {
-    Grammar: [
         {
             question: "Identify the correct use of 'their' in a sentence.",
             options: [
@@ -1517,14 +1515,1187 @@ const quizQuestions = {
             ],
             correct: 1
         },
-    ],
-    Vocabulary: [
+{
+            question: "Select the sentence with correct subject-verb agreement.",
+            options: [
+                "The dogs barks loudly.",
+                "The dog bark loudly.",
+                "The dog barks loudly.",
+                "The dogs barking loudly."
+            ],
+            correct: 2
+        },
         {
-            question: "What is a synonym for 'quick'?",
-            options: ["Slow", "Fast", "Lethargic", "Late"],
+            question: "Choose the correct use of 'it's'.",
+            options: [
+                "It's going to rain today.",
+                "The cat licked it's fur.",
+                "Its a beautiful day.",
+                "The dog found it's bone."
+            ],
+            correct: 0
+        },
+        {
+            question: "Which sentence uses the correct article?",
+            options: [
+                "She bought a apple.",
+                "He is an honest man.",
+                "They live in an Europe.",
+                "I saw an unicorn."
+            ],
             correct: 1
         },
+        {
+            question: "Identify the sentence with correct punctuation.",
+            options: [
+                "Where are you going.",
+                "She said, 'Hello!'",
+                "Its raining heavily, take an umbrella.",
+                "Can I come with you?"
+            ],
+            correct: 3
+        },
+        {
+            question: "Choose the correct comparative form of 'happy'.",
+            options: ["Happier", "More happy", "Most happy", "Happiest"],
+            correct: 0
+        },
+        {
+            question: "Identify the correct use of 'who's' in a sentence.",
+            options: [
+                "Who's book is this?",
+                "Who's coming to the party?",
+                "Who's shoes are these?",
+                "Who's is a possessive pronoun."
+            ],
+            correct: 1
+        },
+        {
+            question: "Which sentence uses the correct plural form?",
+            options: [
+                "The childs are playing outside.",
+                "The children is playing outside.",
+                "The children are playing outside.",
+                "The childrens are playing outside."
+            ],
+            correct: 2
+        },
+        {
+            question: "Select the sentence with the correct preposition.",
+            options: [
+                "She is good in mathematics.",
+                "He is interested with art.",
+                "They are keen on sports.",
+                "We are afraid for the dark."
+            ],
+            correct: 2
+        },
+        {
+            question: "Choose the correct past participle of 'write'.",
+            options: ["Wrote", "Written", "Writing", "Writes"],
+            correct: 1
+        },
+        {
+            question: "Identify the correct sentence structure.",
+            options: [
+                "Quickly runs the dog.",
+                "The dog quickly runs.",
+                "The quickly dog runs.",
+                "Runs quickly the dog."
+            ],
+            correct: 1
+        },
+        {
+            question: "Which sentence uses 'affect' correctly?",
+            options: [
+                "The movie will effect your mood.",
+                "The weather can affect your plans.",
+                "The new law will have an affect.",
+                "Affecting changes is not easy."
+            ],
+            correct: 1
+        },
+        {
+            question: "Choose the correct synonym for 'big'.",
+            options: ["Tiny", "Large", "Small", "Narrow"],
+            correct: 1
+        },
+        {
+            question: "Identify the correct use of 'there'.",
+            options: [
+                "There going to the market.",
+                "The book is over their.",
+                "Look over there!",
+                "Their is a new shop in town."
+            ],
+            correct: 2
+        },
+        {
+            question: "Which sentence uses the correct conjunction?",
+            options: [
+                "I like apples, but oranges are my favorite.",
+                "She is tired, or she will go to the gym.",
+                "He missed the bus, so he walked home.",
+                "It was raining, and he forgot his umbrella."
+            ],
+            correct: 2
+        },
+        {
+            question: "Select the correct sentence with the correct verb form.",
+            options: [
+                "She do the laundry every weekend.",
+                "He does the homework before dinner.",
+                "They doing the project right now.",
+                "We done the task already."
+            ],
+            correct: 1
+        },
+        {
+            question: "Choose the sentence with correct word order.",
+            options: [
+                "Can you please help me?",
+                "Please can help you me?",
+                "You please can help me?",
+                "Help me you please can?"
+            ],
+            correct: 0
+        },
+        {
+            question: "Identify the correct use of 'whose' in a sentence.",
+            options: [
+                "Whose is the coat on the chair?",
+                "I wonder whose book is this?",
+                "Whose are you calling at this hour?",
+                "Whose idea was this?"
+            ],
+            correct: 3
+        },
+        {
+            question: "Which sentence uses correct capitalization?",
+            options: [
+                "the Eiffel tower is in France.",
+                "She visited new York last year.",
+                "I love watching Movies in winter.",
+                "My friend went to the Sahara Desert."
+            ],
+            correct: 3
+        },
+        {
+            question: "Choose the correct sentence using 'your'.",
+            options: [
+                "Is this you're book?",
+                "Your going to love this.",
+                "Your dress looks beautiful.",
+                "Your is a nice person."
+            ],
+            correct: 2
+        },
     ],
+    Vocabulary: [
+    {
+        question: "What is a synonym for 'quick'?",
+        options: ["Slow", "Fast", "Lethargic", "Late"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Sad", "Joyful", "Angry", "Confused"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'big'?",
+        options: ["Tiny", "Massive", "Light", "Narrow"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'strong'?",
+        options: ["Weak", "Powerful", "Fragile", "Tired"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'friendly'?",
+        options: ["Hostile", "Amiable", "Cold", "Rude"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'sad'?",
+        options: ["Happy", "Joyful", "Gloomy", "Cheerful"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'quiet'?",
+        options: ["Loud", "Noisy", "Silent", "Energetic"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'intelligent'?",
+        options: ["Dumb", "Smart", "Confused", "Forgetful"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'brave'?",
+        options: ["Fearful", "Courageous", "Cowardly", "Weak"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'small'?",
+        options: ["Tiny", "Huge", "Massive", "Large"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'easy'?",
+        options: ["Complicated", "Difficult", "Simple", "Hard"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Dark", "Dim", "Radiant", "Faint"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Ugly", "Pretty", "Plain", "Unattractive"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'cold'?",
+        options: ["Hot", "Icy", "Warm", "Mild"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'old'?",
+        options: ["New", "Aged", "Fresh", "Modern"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'expensive'?",
+        options: ["Cheap", "Costly", "Inexpensive", "Affordable"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'dangerous'?",
+        options: ["Safe", "Risky", "Harmless", "Calm"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'difficult'?",
+        options: ["Easy", "Hard", "Simple", "Quick"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'weak'?",
+        options: ["Strong", "Feeble", "Mighty", "Firm"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'clean'?",
+        options: ["Dirty", "Messy", "Neat", "Filthy"],
+        correct: 2
+    },
+{
+        question: "What is an antonym for 'happy'?",
+        options: ["Sad", "Glad", "Joyful", "Excited"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'large'?",
+        options: ["Tiny", "Huge", "Small", "Narrow"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'difficult'?",
+        options: ["Hard", "Challenging", "Simple", "Complicated"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Happy", "Furious", "Calm", "Peaceful"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'dark'?",
+        options: ["Black", "Bright", "Gloomy", "Dim"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'start'?",
+        options: ["Finish", "Begin", "End", "Stop"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Weak", "Tough", "Powerful", "Solid"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'smart'?",
+        options: ["Intelligent", "Dumb", "Ignorant", "Unwise"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'hot'?",
+        options: ["Warm", "Cold", "Scorching", "Boiling"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'tiny'?",
+        options: ["Massive", "Large", "Minute", "Big"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'old'?",
+        options: ["Ancient", "Young", "Aged", "Mature"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Ugly", "Pretty", "Hideous", "Repulsive"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'full'?",
+        options: ["Empty", "Packed", "Complete", "Whole"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'fast'?",
+        options: ["Slow", "Quick", "Sluggish", "Delayed"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'early'?",
+        options: ["On time", "Prompt", "Late", "Soon"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Dim", "Dull", "Shiny", "Dark"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'up'?",
+        options: ["Down", "Above", "Higher", "Over"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'strong'?",
+        options: ["Weak", "Powerful", "Fragile", "Delicate"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'cheap'?",
+        options: ["Expensive", "Affordable", "Low-cost", "Reasonable"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'cold'?",
+        options: ["Hot", "Chilly", "Warm", "Boiling"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'easy'?",
+        options: ["Simple", "Hard", "Effortless", "Light"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Sad", "Joyful", "Upset", "Depressed"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'short'?",
+        options: ["Tiny", "Small", "Tall", "Brief"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Calm", "Irritated", "Joyful", "Satisfied"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'old'?",
+        options: ["Elderly", "Aged", "New", "Ancient"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'clean'?",
+        options: ["Dirty", "Tidy", "Messy", "Filthy"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Powerful", "Fragile", "Mighty", "Tough"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'brave'?",
+        options: ["Cowardly", "Timid", "Courageous", "Afraid"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'bright'?",
+        options: ["Dim", "Shiny", "Radiant", "Brilliant"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'difficult'?",
+        options: ["Easy", "Simple", "Challenging", "Effortless"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'full'?",
+        options: ["Complete", "Empty", "Crowded", "Occupied"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'lazy'?",
+        options: ["Active", "Energetic", "Idle", "Busy"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'early'?",
+        options: ["Prompt", "Late", "Timely", "Fast"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'soft'?",
+        options: ["Hard", "Rough", "Gentle", "Tough"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'fast'?",
+        options: ["Quick", "Speedy", "Slow", "Rapid"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'quiet'?",
+        options: ["Noisy", "Silent", "Loud", "Booming"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'rich'?",
+        options: ["Wealthy", "Poor", "Affluent", "Prosperous"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'thin'?",
+        options: ["Thick", "Narrow", "Wide", "Broad"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'love'?",
+        options: ["Adore", "Hate", "Cherish", "Like"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Happy", "Furious", "Joyful", "Calm"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Weak", "Tough", "Powerful", "Resilient"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Dim", "Shiny", "Dark", "Dull"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'expensive'?",
+        options: ["Affordable", "Costly", "Pricey", "Lavish"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Ugly", "Pretty", "Hideous", "Gross"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'noisy'?",
+        options: ["Quiet", "Loud", "Rowdy", "Clamorous"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'tired'?",
+        options: ["Energetic", "Fatigued", "Alert", "Awake"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'dangerous'?",
+        options: ["Risky", "Harmful", "Safe", "Perilous"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Miserable", "Sad", "Joyful", "Gloomy"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'fast'?",
+        options: ["Slow", "Quick", "Speedy", "Rapid"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'easy'?",
+        options: ["Difficult", "Simple", "Hard", "Complex"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'wet'?",
+        options: ["Moist", "Dry", "Damp", "Soggy"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'old'?",
+        options: ["Ancient", "Modern", "Young", "Recent"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'soft'?",
+        options: ["Gentle", "Hard", "Smooth", "Tender"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'clean'?",
+        options: ["Tidy", "Dirty", "Messy", "Filthy"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'thick'?",
+        options: ["Thin", "Dense", "Wide", "Heavy"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'strong'?",
+        options: ["Powerful", "Fragile", "Weak", "Feeble"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'light'?",
+        options: ["Bright", "Heavy", "Soft", "Gentle"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'safe'?",
+        options: ["Risky", "Dangerous", "Secure", "Perilous"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'love'?",
+        options: ["Hate", "Adore", "Like", "Admire"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Miserable", "Joyful", "Gloomy", "Sad"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'sharp'?",
+        options: ["Blunt", "Pointed", "Keen", "Jagged"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'quick'?",
+        options: ["Slow", "Swift", "Sluggish", "Lazy"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Mighty", "Fragile", "Powerful", "Sturdy"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'clean'?",
+        options: ["Tidy", "Filthy", "Messy", "Dirty"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'tall'?",
+        options: ["Short", "High", "Large", "Towering"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Calm", "Furious", "Pleased", "Delighted"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'early'?",
+        options: ["Prompt", "Late", "On time", "Quick"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Ugly", "Hideous", "Pretty", "Unpleasant"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'fast'?",
+        options: ["Rapid", "Quick", "Slow", "Swift"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'small'?",
+        options: ["Tiny", "Huge", "Large", "Massive"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'bright'?",
+        options: ["Shiny", "Dim", "Radiant", "Lustrous"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'lazy'?",
+        options: ["Industrious", "Hardworking", "Idle", "Energetic"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'hot'?",
+        options: ["Warm", "Cold", "Boiling", "Scorching"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'thin'?",
+        options: ["Narrow", "Wide", "Thick", "Bulky"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'dark'?",
+        options: ["Bright", "Dim", "Gloomy", "Dull"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'strong'?",
+        options: ["Fragile", "Powerful", "Weak", "Delicate"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'cheap'?",
+        options: ["Affordable", "Inexpensive", "Expensive", "Low-cost"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'calm'?",
+        options: ["Peaceful", "Loud", "Agitated", "Noisy"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'love'?",
+        options: ["Hate", "Adore", "Cherish", "Admire"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'friendly'?",
+        options: ["Hostile", "Kind", "Mean", "Rude"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Powerful", "Weak", "Resilient", "Solid"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'dull'?",
+        options: ["Bright", "Sharp", "Boring", "Lively"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'open'?",
+        options: ["Closed", "Exposed", "Accessible", "Available"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Pleased", "Calm", "Furious", "Content"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'clean'?",
+        options: ["Messy", "Tidy", "Neat", "Spotless"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'safe'?",
+        options: ["Secure", "Risky", "Dangerous", "Harmful"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'bright'?",
+        options: ["Dim", "Radiant", "Shiny", "Luminous"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'quick'?",
+        options: ["Fast", "Slow", "Lethargic", "Sluggish"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'wide'?",
+        options: ["Broad", "Narrow", "Spacious", "Expansive"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'tired'?",
+        options: ["Energetic", "Exhausted", "Lively", "Awake"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'weak'?",
+        options: ["Fragile", "Strong", "Feeble", "Delicate"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'start'?",
+        options: ["Finish", "Begin", "End", "Conclude"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'hot'?",
+        options: ["Warm", "Cold", "Boiling", "Scorching"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Pretty", "Ugly", "Plain", "Unattractive"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'happy'?",
+        options: ["Sad", "Joyful", "Excited", "Content"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'large'?",
+        options: ["Tiny", "Huge", "Small", "Mini"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'early'?",
+        options: ["Prompt", "Late", "On time", "Quick"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'dark'?",
+        options: ["Bright", "Gloomy", "Radiant", "Luminous"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'light'?",
+        options: ["Heavy", "Bright", "Soft", "Gentle"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'brave'?",
+        options: ["Cowardly", "Fearful", "Courageous", "Timid"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'soft'?",
+        options: ["Gentle", "Hard", "Smooth", "Silky"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'cold'?",
+        options: ["Warm", "Chilly", "Hot", "Boiling"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'weak'?",
+        options: ["Fragile", "Powerful", "Strong", "Delicate"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'smart'?",
+        options: ["Intelligent", "Dull", "Foolish", "Ignorant"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'cheap'?",
+        options: ["Expensive", "Affordable", "Reasonable", "Low-cost"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'dirty'?",
+        options: ["Filthy", "Clean", "Tidy", "Spotless"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'bright'?",
+        options: ["Shiny", "Dim", "Radiant", "Brilliant"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'fast'?",
+        options: ["Slow", "Quick", "Lethargic", "Sluggish"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Weak", "Powerful", "Sturdy", "Mighty"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Furious", "Content", "Calm", "Pleased"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'big'?",
+        options: ["Large", "Huge", "Small", "Massive"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'thin'?",
+        options: ["Wide", "Narrow", "Thick", "Broad"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'beautiful'?",
+        options: ["Pretty", "Ugly", "Attractive", "Lovely"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'rich'?",
+        options: ["Wealthy", "Poor", "Destitute", "Broke"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'noisy'?",
+        options: ["Loud", "Quiet", "Clamorous", "Rowdy"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'easy'?",
+        options: ["Difficult", "Simple", "Hard", "Complicated"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'tall'?",
+        options: ["High", "Short", "Towering", "Large"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Sad", "Joyful", "Miserable", "Unhappy"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'dark'?",
+        options: ["Dim", "Bright", "Gloomy", "Dull"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'fear'?",
+        options: ["Courage", "Terror", "Bravery", "Confidence"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'difficult'?",
+        options: ["Hard", "Challenging", "Easy", "Tough"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'laugh'?",
+        options: ["Cry", "Weep", "Giggle", "Shout"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'ancient'?",
+        options: ["Modern", "Old", "Historic", "Aged"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'fast'?",
+        options: ["Speedy", "Slow", "Lazy", "Delayed"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'empty'?",
+        options: ["Full", "Vacant", "Hollow", "Bare"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Shiny", "Dull", "Dim", "Dark"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'sharp'?",
+        options: ["Pointed", "Blunt", "Keen", "Edgy"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'sad'?",
+        options: ["Joyful", "Happy", "Miserable", "Excited"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'wide'?",
+        options: ["Narrow", "Broad", "Expansive", "Spacious"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'large'?",
+        options: ["Small", "Tiny", "Huge", "Narrow"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'start'?",
+        options: ["Begin", "End", "Initiate", "Launch"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'quiet'?",
+        options: ["Noisy", "Silent", "Loud", "Rowdy"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'weak'?",
+        options: ["Fragile", "Strong", "Frail", "Delicate"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'kind'?",
+        options: ["Rude", "Cruel", "Generous", "Mean"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'heavy'?",
+        options: ["Weighty", "Massive", "Light", "Bulky"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'hungry'?",
+        options: ["Starving", "Full", "Satisfied", "Content"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'early'?",
+        options: ["Late", "Prompt", "Punctual", "Timely"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'funny'?",
+        options: ["Hilarious", "Serious", "Boring", "Sad"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'love'?",
+        options: ["Adore", "Cherish", "Hate", "Admire"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Content", "Furious", "Calm", "Happy"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'soft'?",
+        options: ["Gentle", "Hard", "Smooth", "Silky"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'begin'?",
+        options: ["Finish", "Start", "End", "Conclude"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'high'?",
+        options: ["Low", "Tall", "Elevated", "Above"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'hot'?",
+        options: ["Warm", "Cold", "Cool", "Chilly"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'new'?",
+        options: ["Modern", "Current", "Old", "Recent"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'beautiful'?",
+        options: ["Ugly", "Pretty", "Hideous", "Unattractive"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'full'?",
+        options: ["Vacant", "Complete", "Empty", "Loaded"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'easy'?",
+        options: ["Simple", "Difficult", "Hard", "Complicated"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'clean'?",
+        options: ["Tidy", "Dirty", "Neat", "Spotless"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'fast'?",
+        options: ["Slow", "Swift", "Lethargic", "Sluggish"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'happy'?",
+        options: ["Sad", "Joyful", "Excited", "Content"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Dull", "Dim", "Shiny", "Dark"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Powerful", "Weak", "Sturdy", "Tough"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'tired'?",
+        options: ["Awake", "Energetic", "Exhausted", "Lively"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'cold'?",
+        options: ["Chilly", "Hot", "Cool", "Freezing"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'bright'?",
+        options: ["Radiant", "Dim", "Dull", "Dark"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'wide'?",
+        options: ["Broad", "Spacious", "Narrow", "Expansive"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'friendly'?",
+        options: ["Hostile", "Kind", "Mean", "Rude"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'peaceful'?",
+        options: ["Calm", "Tranquil", "Violent", "Quiet"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'happy'?",
+        options: ["Joyful", "Miserable", "Sad", "Angry"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'strong'?",
+        options: ["Powerful", "Weak", "Mighty", "Resilient"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'quick'?",
+        options: ["Fast", "Slow", "Late", "Delayed"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'bright'?",
+        options: ["Radiant", "Shiny", "Dim", "Glowing"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'small'?",
+        options: ["Tiny", "Large", "Massive", "Huge"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'difficult'?",
+        options: ["Challenging", "Hard", "Complicated", "Easy"],
+        correct: 3
+    },
+    {
+        question: "What is a synonym for 'angry'?",
+        options: ["Happy", "Calm", "Furious", "Content"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'clean'?",
+        options: ["Tidy", "Dirty", "Spotless", "Organized"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'fearful'?",
+        options: ["Courageous", "Brave", "Afraid", "Bold"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'hot'?",
+        options: ["Warm", "Chilly", "Cold", "Boiling"],
+        correct: 2
+    },
+    {
+        question: "What is a synonym for 'begin'?",
+        options: ["End", "Start", "Close", "Finish"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'full'?",
+        options: ["Empty", "Complete", "Occupied", "Loaded"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'rich'?",
+        options: ["Wealthy", "Poor", "Broke", "Destitute"],
+        correct: 0
+    },
+    {
+        question: "What is an antonym for 'lazy'?",
+        options: ["Industrious", "Inactive", "Sluggish", "Slow"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'strong'?",
+        options: ["Weak", "Powerful", "Fragile", "Soft"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'friendly'?",
+        options: ["Hostile", "Kind", "Warm", "Loving"],
+        correct: 0
+    },
+    {
+        question: "What is a synonym for 'fast'?",
+        options: ["Slow", "Quick", "Late", "Delayed"],
+        correct: 1
+    },
+    {
+        question: "What is an antonym for 'quiet'?",
+        options: ["Silent", "Noisy", "Calm", "Peaceful"],
+        correct: 1
+    },
+    {
+        question: "What is a synonym for 'dark'?",
+        options: ["Bright", "Dim", "Gloomy", "Shiny"],
+        correct: 2
+    },
+    {
+        question: "What is an antonym for 'cheap'?",
+        options: ["Affordable", "Reasonable", "Expensive", "Inexpensive"],
+        correct: 2
+    },
+ ]
+
+
+
+        
+
+
+
+
     Comprehension: [
         {
             question: "What is the main idea of the passage: 'The fox and the crow story'?",
