@@ -1689,7 +1689,7 @@ const quizQuestions = {
                 "Your is a nice person."
             ],
             correct: 2
-        },
+        }
     ],
     Vocabulary: [
     {
@@ -2686,16 +2686,8 @@ const quizQuestions = {
         question: "What is an antonym for 'cheap'?",
         options: ["Affordable", "Reasonable", "Expensive", "Inexpensive"],
         correct: 2
-    },
- ]
-
-
-
-        
-
-
-
-
+    }
+ ],
     Comprehension: [
         {
             question: "What is the main idea of the passage: 'The fox and the crow story'?",
@@ -2707,5 +2699,2164 @@ const quizQuestions = {
             ],
             correct: 1
         },
+        {
+            question: "Why did the boy cry wolf in 'The Boy Who Cried Wolf'?",
+            options: [
+                "He was in real danger.",
+                "He wanted to play a trick on the villagers.",
+                "He saw a real wolf.",
+                "He needed help with his sheep."
+            ],
+            correct: 1
+        },
+        {
+            question: "What lesson does 'The Tortoise and the Hare' teach?",
+            options: [
+                "Fast runners always win.",
+                "Overconfidence can lead to failure.",
+                "Hares are lazy animals.",
+                "Tortoises are slow but weak."
+            ],
+            correct: 1
+        },
+        {
+            question: "In 'Jack and the Beanstalk,' what does Jack trade for magic beans?",
+            options: [
+                "A golden egg.",
+                "A cow.",
+                "A hen.",
+                "A bag of gold."
+            ],
+            correct: 1
+        },
+        {
+            question: "What is the moral of 'The Ant and the Grasshopper'?",
+            options: [
+                "Hard work and preparation pay off.",
+                "Singing is more important than working.",
+                "Ants are selfish creatures.",
+                "Grasshoppers live longer than ants."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was Little Red Riding Hood carrying to her grandmother?",
+            options: [
+                "A basket of food.",
+                "A gift.",
+                "A letter.",
+                "A book."
+            ],
+            correct: 0
+        },
+        {
+            question: "What does the phrase 'crying wolf' mean?",
+            options: [
+                "Being afraid of wolves.",
+                "Lying so often that people stop believing you.",
+                "Calling for help when in danger.",
+                "Hunting for wolves."
+            ],
+            correct: 1
+        },
+        {
+            question: "What did the Gingerbread Man shout while running away?",
+            options: [
+                "'You can't catch me, I'm the Gingerbread Man!'",
+                "'I am the fastest cookie in the world!'",
+                "'Catch me if you can!'",
+                "'Run, run, as fast as you can!'"
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Goldilocks enter the house of the three bears?",
+            options: [
+                "She was lost and looking for shelter.",
+                "She wanted to steal their food.",
+                "She was invited by the bears.",
+                "She was chasing a butterfly."
+            ],
+            correct: 0
+        },
+        {
+            question: "In 'Hansel and Gretel,' what was the witch’s house made of?",
+            options: [
+                "Chocolate and candy.",
+                "Wood and straw.",
+                "Ice and snow.",
+                "Bricks and mortar."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the prince visit Cinderella’s house with a glass slipper?",
+            options: [
+                "He wanted to find the girl who fit the slipper.",
+                "He wanted to give her another slipper.",
+                "He was selling shoes.",
+                "He wanted to punish her stepmother."
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the lesson of 'The Boy Who Cried Wolf'?",
+            options: [
+                "Always tell the truth.",
+                "Wolves are dangerous.",
+                "People will always come to help.",
+                "Never trust a shepherd."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Big Bad Wolf blow down the houses in 'The Three Little Pigs'?",
+            options: [
+                "He wanted to eat the pigs.",
+                "He liked making a mess.",
+                "He was testing his strength.",
+                "He was playing a game."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened to the golden eggs in 'The Goose that Laid the Golden Eggs'?",
+            options: [
+                "They were sold for money.",
+                "The goose stopped laying them when it was killed.",
+                "They turned into ordinary eggs.",
+                "They were stolen by a thief."
+            ],
+            correct: 1
+        },
+        {
+            question: "What did the ugly duckling grow up to be?",
+            options: [
+                "A beautiful swan.",
+                "A large duck.",
+                "A powerful eagle.",
+                "A wise owl."
+            ],
+            correct: 0
+        },
+        {
+            question: "In 'The Emperor’s New Clothes,' why did the emperor believe he was wearing clothes?",
+            options: [
+                "He was tricked into thinking they were invisible to fools.",
+                "The clothes were truly magical.",
+                "He had poor eyesight.",
+                "The people forced him to believe it."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Pinocchio’s nose do when he lied?",
+            options: [
+                "It grew longer.",
+                "It turned red.",
+                "It disappeared.",
+                "It started glowing."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Ali Baba say to open the cave in 'Ali Baba and the Forty Thieves'?",
+            options: [
+                "'Open Sesame!'",
+                "'Unlock, Cave!'",
+                "'Let me in!'",
+                "'Magic doors, open!'"
+            ],
+            correct: 0
+        },
+        {
+            question: "In 'The Little Mermaid,' what does the mermaid trade for legs?",
+            options: [
+                "Her voice.",
+                "Her crown.",
+                "Her tail.",
+                "Her memories."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the key object in 'Aladdin and the Magic Lamp'?",
+            options: [
+                "A magical lamp.",
+                "A golden ring.",
+                "A flying carpet.",
+                "A genie’s bottle."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Snow White eat the poisoned apple?",
+            options: [
+                "She was hungry.",
+                "The evil queen tricked her.",
+                "She didn’t know it was poisoned.",
+                "She wanted to test its taste."
+            ],
+            correct: 1
+        },
+        {
+            question: "What was Rapunzel’s special feature?",
+            options: [
+                "She had magical long hair.",
+                "She could talk to animals.",
+                "She had wings.",
+                "She could turn invisible."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Pied Piper lead the children away?",
+            options: [
+                "He was punishing the town for not paying him.",
+                "He wanted to take them to a new home.",
+                "He was under a spell.",
+                "He was helping them escape a flood."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened at midnight in 'Cinderella'?",
+            options: [
+                "Her dress turned back to rags.",
+                "She met the prince.",
+                "She lost her glass slipper.",
+                "She turned into a pumpkin."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main conflict in 'Beauty and the Beast'?",
+            options: [
+                "The Beast had to break his curse.",
+                "Beauty wanted to leave the castle.",
+                "The villagers wanted to capture the Beast.",
+                "Beauty’s father was lost in the forest."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the wolf dress up as Little Red Riding Hood’s grandmother?",
+            options: [
+                "To hide from the hunters.",
+                "To trick Little Red Riding Hood.",
+                "To escape from the village.",
+                "To test her intelligence."
+            ],
+            correct: 1
+        },
+        {
+            question: "What made Thumbelina special?",
+            options: [
+                "She was very small.",
+                "She could fly.",
+                "She could talk to flowers.",
+                "She lived underwater."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the secret behind Rumpelstiltskin’s power?",
+            options: [
+                "His name had to be guessed.",
+                "He had a magic wand.",
+                "He controlled the kingdom.",
+                "He was the king’s advisor."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the shoemaker’s shoes become famous?",
+            options: [
+                "They were made by elves.",
+                "They were made of gold.",
+                "They could make people run faster.",
+                "They had magical powers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the fisherman’s wife wish for in 'The Fisherman and His Wife'?",
+            options: [
+                "To become rich and powerful.",
+                "To have a magic lamp.",
+                "To live underwater.",
+                "To talk to animals."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the princess in 'The Frog Prince' kiss the frog?",
+            options: [
+                "She wanted to break the spell.",
+                "She liked frogs.",
+                "She was dared to do it.",
+                "She wanted to keep him as a pet."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when the princess in 'The Princess and the Pea' slept on the bed?",
+            options: [
+                "She felt the pea under the mattresses.",
+                "She had a peaceful sleep.",
+                "She floated in the air.",
+                "She lost her crown."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little match girl light matches?",
+            options: [
+                "To keep warm in the cold.",
+                "To sell them.",
+                "To light a fire for cooking.",
+                "To see in the dark."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened to the wicked queen in 'Snow White'?",
+            options: [
+                "She was punished for her wickedness.",
+                "She ran away and was never seen again.",
+                "She became kind.",
+                "She became the new queen."
+            ],
+            correct: 0
+        },
+        {
+            question: "In 'The Twelve Dancing Princesses,' where did the princesses go at night?",
+            options: [
+                "To a secret underground palace.",
+                "To visit another kingdom.",
+                "To escape from their father.",
+                "To dance in the village."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made the golden goose special?",
+            options: [
+                "It laid golden eggs.",
+                "It could talk.",
+                "It could fly faster than other geese.",
+                "It could turn invisible."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the wooden puppet, Pinocchio, want to be a real boy?",
+            options: [
+                "He wanted to experience human emotions.",
+                "He was tired of being wooden.",
+                "He wanted to go on adventures.",
+                "He wanted to become a prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "In 'Sleeping Beauty,' how did the princess wake up?",
+            options: [
+                "She was kissed by a prince.",
+                "She woke up on her own.",
+                "The fairy godmother reversed the spell.",
+                "A knight broke the curse."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main theme of 'The Elves and the Shoemaker'?",
+            options: [
+                "Kindness is rewarded.",
+                "Hard work leads to wealth.",
+                "Shoes bring luck.",
+                "Elves are magical creatures."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when King Midas touched things?",
+            options: [
+                "They turned to gold.",
+                "They disappeared.",
+                "They became invisible.",
+                "They started glowing."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Dorothy want to go to the Wizard of Oz?",
+            options: [
+                "To find her way back home.",
+                "To become a princess.",
+                "To defeat the Wicked Witch.",
+                "To get magical powers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Scarecrow want from the Wizard of Oz?",
+            options: [
+                "A heart.",
+                "A brain.",
+                "Courage.",
+                "A home."
+            ],
+            correct: 1
+        },
+        {
+            question: "Why did the Tin Man need the Wizard's help?",
+            options: [
+                "He wanted a heart.",
+                "He wanted to be human.",
+                "He wanted to be stronger.",
+                "He needed a new coat of paint."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Lion seek in 'The Wizard of Oz'?",
+            options: [
+                "A tail.",
+                "Courage.",
+                "Wisdom.",
+                "A kingdom."
+            ],
+            correct: 1
+        },
+        {
+            question: "What did Gulliver discover in Lilliput?",
+            options: [
+                "Tiny people.",
+                "A hidden treasure.",
+                "Talking animals.",
+                "A magical island."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Little Prince leave his planet?",
+            options: [
+                "He wanted to explore the universe.",
+                "He was searching for a treasure.",
+                "He had to escape a war.",
+                "He was looking for another prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the moral of 'The Emperor's New Clothes'?",
+            options: [
+                "Honesty is important.",
+                "Clothes make the man.",
+                "Magic exists in the world.",
+                "Tailors are the smartest people."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Robin Hood help people?",
+            options: [
+                "He stole from the rich and gave to the poor.",
+                "He built houses for the poor.",
+                "He taught people to hunt.",
+                "He opened a school."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was Peter Pan's special ability?",
+            options: [
+                "He could fly.",
+                "He could turn invisible.",
+                "He could talk to animals.",
+                "He had super strength."
+            ],
+            correct: 0
+        },
+        {
+            question: "Who was Captain Hook afraid of?",
+            options: [
+                "Tinker Bell.",
+                "The ticking crocodile.",
+                "Peter Pan.",
+                "The Lost Boys."
+            ],
+            correct: 1
+        },
+        {
+            question: "What did Alice fall into in 'Alice in Wonderland'?",
+            options: [
+                "A rabbit hole.",
+                "A magic mirror.",
+                "A deep well.",
+                "A secret tunnel."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Queen of Hearts get angry at Alice?",
+            options: [
+                "Alice questioned her authority.",
+                "Alice stole her crown.",
+                "Alice refused to play croquet.",
+                "Alice broke a magic spell."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was special about the Cheshire Cat?",
+            options: [
+                "It could disappear and reappear.",
+                "It could talk in riddles.",
+                "It had magical fur.",
+                "It could fly."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Mowgli learn from Baloo in 'The Jungle Book'?",
+            options: [
+                "The Bare Necessities of life.",
+                "How to fight tigers.",
+                "How to talk to snakes.",
+                "How to become a jungle king."
+            ],
+            correct: 0
+        },
+        {
+            question: "Who was the main villain in 'The Jungle Book'?",
+            options: [
+                "Shere Khan.",
+                "Bagheera.",
+                "Baloo.",
+                "Kaa."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Ugly Duckling feel sad?",
+            options: [
+                "He looked different from the others.",
+                "He couldn't swim.",
+                "He was always hungry.",
+                "He had no feathers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Sinbad the Sailor love to do?",
+            options: [
+                "Go on adventures by sea.",
+                "Search for treasure in caves.",
+                "Fly on magical carpets.",
+                "Tame wild animals."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was special about the genie in 'Aladdin'?",
+            options: [
+                "He could grant three wishes.",
+                "He could time travel.",
+                "He could fly without a carpet.",
+                "He was invisible."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Beast allow Beauty to stay in his castle?",
+            options: [
+                "She offered to stay in place of her father.",
+                "She loved the castle.",
+                "He wanted her to be his queen.",
+                "She had magical powers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Puss in Boots use to help his master become rich?",
+            options: [
+                "His clever tricks.",
+                "A magic wand.",
+                "A golden goose.",
+                "A secret treasure map."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the goose in 'Jack and the Beanstalk' lay?",
+            options: [
+                "Golden eggs.",
+                "Silver coins.",
+                "Magic beans.",
+                "Diamonds."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Giant chase Jack in 'Jack and the Beanstalk'?",
+            options: [
+                "Jack stole from him.",
+                "Jack wanted to be his friend.",
+                "The Giant was hungry.",
+                "The Giant wanted to teach Jack magic."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Little Mermaid become human?",
+            options: [
+                "She made a deal with a sea witch.",
+                "She drank a magic potion.",
+                "She wished upon a star.",
+                "She was born that way."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Big Bad Wolf visit the three little pigs?",
+            options: [
+                "He wanted to eat them.",
+                "He wanted to play with them.",
+                "He wanted to borrow food.",
+                "He was lost."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made the Three Billy Goats Gruff afraid?",
+            options: [
+                "A troll under the bridge.",
+                "A storm.",
+                "A hungry wolf.",
+                "A dark cave."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Three Billy Goats Gruff defeat the troll?",
+            options: [
+                "The biggest goat knocked him off the bridge.",
+                "They tricked him into falling asleep.",
+                "They scared him away with loud noises.",
+                "They gave him food."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was special about the Golden Touch of King Midas?",
+            options: [
+                "Everything he touched turned to gold.",
+                "It made him stronger.",
+                "It allowed him to fly.",
+                "It gave him wisdom."
+            ],
+            correct: 0
+        },
+        {
+            question: "What lesson did King Midas learn?",
+            options: [
+                "Greed can lead to unhappiness.",
+                "Gold is the key to happiness.",
+                "Magic is dangerous.",
+                "Kings should never make wishes."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Gingerbread Man run away?",
+            options: [
+                "He didn’t want to be eaten.",
+                "He was late for a party.",
+                "He was looking for his family.",
+                "He wanted to explore the world."
+            ],
+            correct: 0
+        },
+        {
+            question: "What trick did the fox play on the Gingerbread Man?",
+            options: [
+                "He pretended to help him cross the river but ate him instead.",
+                "He offered him a place to hide.",
+                "He told him he could fly.",
+                "He gave him a magical cloak."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Fairy Godmother give Cinderella?",
+            options: [
+                "A beautiful dress and glass slippers.",
+                "A golden crown.",
+                "A flying horse.",
+                "A magical wand."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Ugly Duckling feel lonely?",
+            options: [
+                "He looked different from the others.",
+                "He had no friends.",
+                "He couldn't swim well.",
+                "He was afraid of the dark."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Ugly Duckling's story end?",
+            options: [
+                "He grew into a beautiful swan.",
+                "He became a prince.",
+                "He learned how to fly.",
+                "He ran away to a new home."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Red Riding Hood bring to her grandmother?",
+            options: [
+                "A basket of food.",
+                "A book.",
+                "A magic potion.",
+                "A warm blanket."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Prince find Sleeping Beauty?",
+            options: [
+                "He followed a fairy’s guidance.",
+                "He was lost in the forest and discovered her castle.",
+                "He heard stories about her and searched for her.",
+                "He was guided by a talking owl."
+            ],
+            correct: 2
+        },
+        {
+            question: "What did the Seven Dwarfs do when they found Snow White?",
+            options: [
+                "They let her stay with them.",
+                "They sent her away.",
+                "They told the queen about her.",
+                "They turned her into a princess."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the Beast’s curse in 'Beauty and the Beast'?",
+            options: [
+                "He was turned into a beast until he found true love.",
+                "He was unable to leave his castle.",
+                "He lost all his magical powers.",
+                "He had to live alone forever."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Beauty break the Beast’s curse?",
+            options: [
+                "By loving him despite his appearance.",
+                "By finding a magic flower.",
+                "By tricking the witch who cursed him.",
+                "By defeating an evil sorcerer."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was unique about Tom Thumb?",
+            options: [
+                "He was as small as a thumb.",
+                "He could turn invisible.",
+                "He could talk to animals.",
+                "He was made of wood."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the townspeople ignore the boy in 'The Boy Who Cried Wolf'?",
+            options: [
+                "He had lied too many times before.",
+                "They didn’t believe in wolves.",
+                "They were too busy with their work.",
+                "They had moved away."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Tortoise challenge the Hare to a race?",
+            options: [
+                "To prove that slow and steady wins the race.",
+                "To show that he was faster.",
+                "To impress the other animals.",
+                "To make the Hare lose his confidence."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the lesson in 'The Ant and the Grasshopper'?",
+            options: [
+                "Hard work and preparation are important.",
+                "Singing makes life easier.",
+                "Sharing is not necessary.",
+                "Ants are stronger than grasshoppers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when the Lion spared the Mouse in 'The Lion and the Mouse'?",
+            options: [
+                "The Mouse later saved the Lion from a trap.",
+                "The Mouse became the Lion’s servant.",
+                "The Lion regretted his kindness.",
+                "The Mouse tricked the Lion."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Town Mouse visit the Country Mouse?",
+            options: [
+                "To experience country life.",
+                "To bring him back to the city.",
+                "To warn him about danger.",
+                "To ask for food."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made the Golden Fish in 'The Fisherman and the Golden Fish' special?",
+            options: [
+                "It could grant wishes.",
+                "It was the largest fish in the sea.",
+                "It could talk to humans.",
+                "It had magical scales."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Miller’s daughter need Rumpelstiltskin’s help?",
+            options: [
+                "She had to spin straw into gold.",
+                "She wanted to marry the prince.",
+                "She was lost in the forest.",
+                "She was looking for treasure."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the key lesson in 'The Fox and the Grapes'?",
+            options: [
+                "People often pretend they don’t want what they can’t have.",
+                "Foxes are clever and never give up.",
+                "Grapes taste better when they are high up.",
+                "Patience is the key to success."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made the Little Red Hen upset?",
+            options: [
+                "None of the animals helped her bake bread.",
+                "She lost her wheat seeds.",
+                "She had to give her bread away.",
+                "The fox stole her bread."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the shoemaker's shoes become magical in 'The Elves and the Shoemaker'?",
+            options: [
+                "The elves secretly made them at night.",
+                "They were made of special leather.",
+                "The shoemaker wished for magic shoes.",
+                "A fairy cast a spell on them."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Hansel and Gretel leave a trail of breadcrumbs?",
+            options: [
+                "To find their way back home.",
+                "To feed the birds.",
+                "To trick the witch.",
+                "To attract their parents."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was unique about the Pied Piper’s flute?",
+            options: [
+                "It could control rats and children.",
+                "It was made of gold.",
+                "It could play by itself.",
+                "It made people fall asleep."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Sultan want to marry Scheherazade in 'One Thousand and One Nights'?",
+            options: [
+                "He wanted to hear her stories every night.",
+                "She was the most beautiful woman in the kingdom.",
+                "She was a princess from another land.",
+                "She had magical powers."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Sinbad escape from the giant?",
+            options: [
+                "He blinded the giant and sailed away.",
+                "He tricked the giant into sleeping.",
+                "He fought the giant with a sword.",
+                "He made a deal with the giant."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Magic Carpet in 'Aladdin' do?",
+            options: [
+                "It could fly and carry people.",
+                "It turned invisible.",
+                "It could grant wishes.",
+                "It could talk."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the prince in 'The Frog Prince' break the frog’s curse?",
+            options: [
+                "The princess kissed him.",
+                "A fairy helped him.",
+                "He completed a magical quest.",
+                "He found a golden key."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the boy in 'The Brave Little Tailor' defeat the giants?",
+            options: [
+                "He used his intelligence and tricks.",
+                "He fought them with a sword.",
+                "He had magical powers.",
+                "A wizard helped him."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Hare lose the race to the Tortoise?",
+            options: [
+                "He was overconfident and took a nap.",
+                "He got injured.",
+                "He went the wrong way.",
+                "The Tortoise tricked him."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Wolf pretend to be in 'The Wolf in Sheep’s Clothing'?",
+            options: [
+                "A sheep.",
+                "A farmer.",
+                "A hunter.",
+                "A guard dog."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Puss in Boots help his master?",
+            options: [
+                "By using clever tricks to make him rich.",
+                "By finding a hidden treasure.",
+                "By defeating an evil sorcerer.",
+                "By turning him into a prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the farmer’s wife cut off the tails of the three blind mice?",
+            options: [
+                "They ran after her and scared her.",
+                "She wanted to keep them as pets.",
+                "They stole food from her kitchen.",
+                "She mistook them for snakes."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when Goldilocks tried the bears’ porridge?",
+            options: [
+                "She found one too hot, one too cold, and one just right.",
+                "She spilled all of it on the floor.",
+                "She shared it with the bears.",
+                "She ran away before eating."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Billy Goats Gruff outsmart the troll?",
+            options: [
+                "The biggest goat pushed him into the river.",
+                "They ran across the bridge very fast.",
+                "They tricked him into falling asleep.",
+                "They gave him food in exchange for passage."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Rapunzel let down her hair?",
+            options: [
+                "To help the prince climb up to her tower.",
+                "To dry it in the sunlight.",
+                "To escape from the tower herself.",
+                "To show off its golden color."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the consequence of the boy lying in 'The Boy Who Cried Wolf'?",
+            options: [
+                "Nobody believed him when the wolf actually came.",
+                "He was punished by the villagers.",
+                "The wolf became his friend.",
+                "He moved to a different village."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Pinocchio's nose change when he lied?",
+            options: [
+                "It grew longer.",
+                "It turned red.",
+                "It disappeared.",
+                "It glowed in the dark."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the witch use to lure Hansel and Gretel?",
+            options: [
+                "A house made of candy and gingerbread.",
+                "A magical potion.",
+                "A glowing lantern in the forest.",
+                "A talking cat."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Cinderella's fairy godmother help her?",
+            options: [
+                "She transformed a pumpkin into a carriage.",
+                "She gave her a magical ring.",
+                "She made her invisible.",
+                "She turned her into a princess forever."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the lesson in 'The Boy Who Cried Wolf'?",
+            options: [
+                "Lying can make people stop trusting you.",
+                "Wolves are dangerous creatures.",
+                "People should always play pranks.",
+                "You should never talk to strangers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Queen ask the magic mirror in 'Snow White'?",
+            options: [
+                "Who is the fairest of them all?",
+                "Who is the richest in the kingdom?",
+                "Where can I find a prince?",
+                "How can I become young again?"
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the little old lady want from the Gingerbread Man?",
+            options: [
+                "She wanted to eat him.",
+                "She wanted to adopt him.",
+                "She wanted him to work for her.",
+                "She wanted to teach him to bake."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Sleeping Beauty fall into a deep sleep?",
+            options: [
+                "She pricked her finger on a spindle.",
+                "She drank a magic potion.",
+                "She was under a fairy’s spell.",
+                "She was cursed by a wicked queen."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Prince wake Sleeping Beauty?",
+            options: [
+                "He kissed her.",
+                "He played a magical song.",
+                "He gave her a golden apple.",
+                "He found a special key."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Ali Baba say 'Open Sesame'?",
+            options: [
+                "To open the secret cave of treasures.",
+                "To enter a hidden palace.",
+                "To unlock a magic book.",
+                "To summon a genie."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Ugly Duckling feel different?",
+            options: [
+                "He looked different from his siblings.",
+                "He couldn’t swim like the others.",
+                "He had no friends to play with.",
+                "He couldn’t fly."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Ugly Duckling’s story end?",
+            options: [
+                "He grew into a beautiful swan.",
+                "He ran away from home.",
+                "He became friends with the other ducks.",
+                "He discovered a magical pond."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Jack trade for magic beans in 'Jack and the Beanstalk'?",
+            options: [
+                "His cow.",
+                "A golden goose.",
+                "A bag of silver.",
+                "A magic flute."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main lesson in 'The Emperor’s New Clothes'?",
+            options: [
+                "Honesty is important, even if others are afraid to speak the truth.",
+                "Clothes define a person’s worth.",
+                "Only wise people can see the truth.",
+                "Magic is real."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made Puss in Boots special?",
+            options: [
+                "He was clever and helped his master become rich.",
+                "He had magical boots that let him fly.",
+                "He could turn invisible.",
+                "He could talk to other animals."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the wolf trick Little Red Riding Hood?",
+            options: [
+                "He dressed up as her grandmother.",
+                "He locked her in a tower.",
+                "He pretended to be a hunter.",
+                "He gave her a magic apple."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Giant’s heart melt in 'The Selfish Giant'?",
+            options: [
+                "He saw children playing in his garden.",
+                "He found a hidden treasure.",
+                "He received a magical gift.",
+                "He realized he was lonely."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the fisherman’s wife keep asking for in 'The Fisherman and His Wife'?",
+            options: [
+                "More and more riches and power.",
+                "A bigger boat to catch more fish.",
+                "A castle for their children.",
+                "A magic ring to rule the kingdom."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little match girl light the matches in 'The Little Match Girl'?",
+            options: [
+                "To warm herself in the cold.",
+                "To sell them to others.",
+                "To scare away the darkness.",
+                "To light a fire for her family."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why was Thumbelina so small?",
+            options: [
+                "She was born from a magical flower.",
+                "She drank a shrinking potion.",
+                "A fairy cast a spell on her.",
+                "She was the daughter of a tiny king."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Snow Queen do to Kai in 'The Snow Queen'?",
+            options: [
+                "She froze his heart and took him away.",
+                "She turned him into a snowman.",
+                "She granted him three wishes.",
+                "She made him her prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Dorothy want to see the Wizard of Oz?",
+            options: [
+                "To find a way back home.",
+                "To become a princess.",
+                "To get a magical pet.",
+                "To meet the Wicked Witch."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the Scarecrow want from the Wizard of Oz?",
+            options: [
+                "A brain.",
+                "A heart.",
+                "Courage.",
+                "A new hat."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Peter Pan take Wendy and her brothers to Neverland?",
+            options: [
+                "They flew using fairy dust.",
+                "They sailed on a magical ship.",
+                "They went through a secret portal.",
+                "They rode on the back of a giant eagle."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was special about the Golden Goose?",
+            options: [
+                "Anyone who touched it got stuck.",
+                "It could lay golden eggs.",
+                "It could talk and tell riddles.",
+                "It could fly faster than the wind."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Bremen Town Musicians leave their homes?",
+            options: [
+                "They were old and no longer wanted by their owners.",
+                "They wanted to become famous singers.",
+                "They were running away from the king.",
+                "They were looking for hidden treasure."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the secret of the Princess in 'The Princess and the Pea'?",
+            options: [
+                "She could feel a tiny pea under many mattresses.",
+                "She had magical powers.",
+                "She could never sleep at night.",
+                "She was really a fairy in disguise."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Tin Man in 'The Wizard of Oz' move again?",
+            options: [
+                "He was oiled by Dorothy and her friends.",
+                "He was given a magical heart.",
+                "The Wizard cast a spell on him.",
+                "The Scarecrow repaired him."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the moral of 'The Goose That Laid the Golden Eggs'?",
+            options: [
+                "Greed can lead to loss.",
+                "Golden eggs are magical.",
+                "Geese can talk to humans.",
+                "Patience always wins."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the prince in 'Beauty and the Beast' turn into a beast?",
+            options: [
+                "He was cursed for being unkind.",
+                "He drank a magical potion.",
+                "A rival prince transformed him.",
+                "He made a wish that went wrong."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the Beast become human again?",
+            options: [
+                "Beauty’s love broke the spell.",
+                "He found a magical rose.",
+                "A wizard reversed the curse.",
+                "He defeated the evil sorceress."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Mowgli grow up in the jungle in 'The Jungle Book'?",
+            options: [
+                "He was raised by wolves after being lost as a baby.",
+                "He was cursed to live among animals.",
+                "He was searching for a hidden treasure.",
+                "He ran away from home."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Robinson Crusoe survive on the island?",
+            options: [
+                "He built shelter and learned to hunt and farm.",
+                "He was rescued by pirates.",
+                "He found a magical cave.",
+                "He met a talking parrot who helped him."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Gulliver first travel in 'Gulliver’s Travels'?",
+            options: [
+                "He was a ship’s doctor and went on a voyage.",
+                "He was looking for treasure.",
+                "He wanted to meet the Lilliputians.",
+                "He was banished from his country."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the King in 'The Twelve Dancing Princesses' want to know?",
+            options: [
+                "Where his daughters disappeared at night.",
+                "Who the most beautiful princess was.",
+                "Where a magical castle was hidden.",
+                "How to break a powerful spell."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the main character in 'The Brave Tin Soldier' show his courage?",
+            options: [
+                "He faced many dangers without giving up.",
+                "He defeated a wicked king.",
+                "He rescued a princess from a tower.",
+                "He found a magic sword."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the shoemaker in 'The Elves and the Shoemaker' become successful?",
+            options: [
+                "Magical elves secretly helped him by making shoes at night.",
+                "He found a hidden treasure.",
+                "He learned to make shoes faster.",
+                "A rich man invested in his shop."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Aladdin find in the cave?",
+            options: [
+                "A magical lamp with a genie inside.",
+                "A golden crown.",
+                "A talking parrot.",
+                "A flying horse."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the emperor in 'The Emperor’s New Clothes' get embarrassed?",
+            options: [
+                "He was tricked into wearing invisible clothes.",
+                "He wore the wrong outfit to a royal event.",
+                "His clothes were stolen by a thief.",
+                "He forgot to wear his crown."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was special about the Pied Piper’s music?",
+            options: [
+                "It could charm rats and children.",
+                "It made people dance uncontrollably.",
+                "It could put people to sleep.",
+                "It made crops grow faster."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the tortoise win the race in 'The Tortoise and the Hare'?",
+            options: [
+                "He was slow but steady, while the hare became overconfident.",
+                "He took a shortcut.",
+                "The hare let him win on purpose.",
+                "He used magic to speed up."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when the ant refused to help the grasshopper in 'The Ant and the Grasshopper'?",
+            options: [
+                "The grasshopper learned the importance of hard work.",
+                "The ant changed his mind and helped him.",
+                "The grasshopper found food elsewhere.",
+                "The grasshopper tricked the ant."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main lesson in 'The Fox and the Grapes'?",
+            options: [
+                "People often pretend they don’t want what they can’t have.",
+                "Foxes love eating grapes.",
+                "Hard work always leads to success.",
+                "Grapes are only for the clever."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the lion repay the mouse in 'The Lion and the Mouse'?",
+            options: [
+                "He let the mouse go and later, the mouse freed him from a trap.",
+                "He shared his food with the mouse.",
+                "He protected the mouse from an eagle.",
+                "He taught the mouse how to roar."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the country mouse dislike the town in 'The Town Mouse and the Country Mouse'?",
+            options: [
+                "It was too noisy and dangerous.",
+                "The food was not tasty.",
+                "He got lost in the city.",
+                "He was scared of the town mice."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the little red hen do when no one helped her?",
+            options: [
+                "She baked the bread and ate it herself.",
+                "She threw away the wheat.",
+                "She left the farm.",
+                "She asked a fox for help."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the ugly duckling suffer in the beginning?",
+            options: [
+                "He looked different and was bullied by other animals.",
+                "He couldn’t swim properly.",
+                "He was lost in the forest.",
+                "He had a broken wing."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the frog turn into in 'The Frog Prince'?",
+            options: [
+                "A handsome prince.",
+                "A talking bird.",
+                "A golden statue.",
+                "A powerful wizard."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little mermaid lose her voice?",
+            options: [
+                "She traded it for legs to walk on land.",
+                "She was cursed by a sea witch.",
+                "She was born without a voice.",
+                "She lost it in a magical storm."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the wolf try to trick the pigs in 'The Three Little Pigs'?",
+            options: [
+                "By blowing down their houses.",
+                "By dressing up as their mother.",
+                "By inviting them to his home.",
+                "By pretending to be friendly."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the wizard give the cowardly lion in 'The Wizard of Oz'?",
+            options: [
+                "A medal to represent courage.",
+                "A golden crown.",
+                "A sword for protection.",
+                "A magic shield."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Miller’s daughter have to spin straw into gold in 'Rumpelstiltskin'?",
+            options: [
+                "Her father lied to the king about her abilities.",
+                "She made a bet with a wizard.",
+                "She found a magic spinning wheel.",
+                "She wanted to impress the prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the princess discover the true identity of 'Rumpelstiltskin'?",
+            options: [
+                "She overheard him singing his name.",
+                "A fairy told her the secret.",
+                "She found his name in an old book.",
+                "She tricked him into revealing it."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Sinbad the Sailor love doing?",
+            options: [
+                "Going on dangerous sea adventures.",
+                "Collecting rare gems.",
+                "Building ships.",
+                "Exploring caves."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why was the Tin Soldier brave?",
+            options: [
+                "He faced many dangers without fear.",
+                "He fought in a great war.",
+                "He saved a princess.",
+                "He had a magical sword."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main lesson in 'Belling the Cat'?",
+            options: [
+                "It’s easy to propose ideas but hard to execute them.",
+                "Cats and mice can be friends.",
+                "Mice should always stay in groups.",
+                "Bravery always wins."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Goldilocks enter the bears' house in 'Goldilocks and the Three Bears'?",
+            options: [
+                "She was curious and wanted to explore.",
+                "She was running away from home.",
+                "She was looking for her lost pet.",
+                "She was invited by the bears."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was Jack’s main goal in 'Jack and the Beanstalk'?",
+            options: [
+                "To take treasures from the giant’s castle.",
+                "To find his lost father.",
+                "To grow the tallest beanstalk in the world.",
+                "To defeat the giant in battle."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the genie in 'Aladdin' offer to do?",
+            options: [
+                "Grant three wishes to his master.",
+                "Teach Aladdin magic.",
+                "Give Aladdin eternal youth.",
+                "Take Aladdin on a flying carpet ride."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did Cinderella’s stepmother treat her badly?",
+            options: [
+                "She was jealous of Cinderella’s beauty and kindness.",
+                "Cinderella was secretly a princess.",
+                "Cinderella had magical powers.",
+                "She wanted Cinderella to marry the prince."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Hansel and Gretel escape the witch?",
+            options: [
+                "Gretel pushed the witch into the oven.",
+                "Hansel tricked her with a magic spell.",
+                "They ran away when she was sleeping.",
+                "A bird helped them fly away."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the princess have to do in 'The Twelve Dancing Princesses'?",
+            options: [
+                "Solve the mystery of the worn-out shoes.",
+                "Find a hidden magical door.",
+                "Defeat an evil sorceress.",
+                "Learn a special dance to save the kingdom."
+            ],
+            correct: 0
+        },
+        {
+            question: "What made Pinocchio’s nose grow longer?",
+            options: [
+                "Lying.",
+                "Being rude to others.",
+                "Eating too much candy.",
+                "Breaking a promise."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Sleeping Beauty’s curse do to her?",
+            options: [
+                "It made her fall into a deep sleep.",
+                "It turned her into a swan.",
+                "It took away her voice.",
+                "It made her forget her true love."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Rapunzel escape from the tower?",
+            options: [
+                "She used her long hair to climb down.",
+                "A prince broke the spell.",
+                "She found a secret door.",
+                "A talking bird helped her."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little boy cry wolf in 'The Boy Who Cried Wolf'?",
+            options: [
+                "He was bored and wanted attention.",
+                "A real wolf was coming.",
+                "He was testing his friends.",
+                "He wanted to trick the villagers."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did King Midas wish for?",
+            options: [
+                "Everything he touched would turn to gold.",
+                "To be the richest man in the world.",
+                "To become immortal.",
+                "To rule all kingdoms."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main problem in 'The Princess and the Frog'?",
+            options: [
+                "The princess didn’t want to keep her promise.",
+                "The frog was really a prince in disguise.",
+                "The princess lost her golden ball.",
+                "The frog wanted to stay a frog."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the wizard give Dorothy in 'The Wizard of Oz'?",
+            options: [
+                "Magic shoes to take her home.",
+                "A golden crown.",
+                "A talking dog.",
+                "A book of spells."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened to Humpty Dumpty?",
+            options: [
+                "He fell off a wall and broke apart.",
+                "He became king.",
+                "He turned into a bird.",
+                "He solved a great mystery."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the Big Bad Wolf blow down the pigs’ houses?",
+            options: [
+                "He wanted to eat them.",
+                "He wanted to play a prank on them.",
+                "He was jealous of their houses.",
+                "He wanted to live in their house."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the mirror say Snow White was no longer the fairest?",
+            options: [
+                "Snow White had grown more beautiful than the Queen.",
+                "The mirror was broken.",
+                "The Queen tricked the mirror.",
+                "Snow White wore a magic dress."
+            ],
+            correct: 0
+        },
+        {
+            question: "What happened when the prince kissed Sleeping Beauty?",
+            options: [
+                "She woke up from her deep sleep.",
+                "She turned into a fairy.",
+                "She forgot who she was.",
+                "She became the queen instantly."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Peter Rabbit do that got him into trouble?",
+            options: [
+                "He sneaked into Mr. McGregor’s garden.",
+                "He broke a magic carrot.",
+                "He tricked his friends.",
+                "He got lost in the woods."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the three billy goats get past the troll in 'The Three Billy Goats Gruff'?",
+            options: [
+                "They tricked him by saying a bigger goat was coming.",
+                "They used magic to disappear.",
+                "They made friends with him.",
+                "They built a bridge over the river."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little red riding hood visit her grandmother?",
+            options: [
+                "To bring her food and check on her health.",
+                "To play in the forest.",
+                "To run away from home.",
+                "To invite her to a party."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main problem in 'The Fisherman and His Wife'?",
+            options: [
+                "The wife was never satisfied with what she had.",
+                "The fisherman could not catch any fish.",
+                "The wife was turned into a fish.",
+                "The fisherman lost his boat."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the ugly duckling change in the end?",
+            options: [
+                "He grew into a beautiful swan.",
+                "He learned to fly away.",
+                "He made friends with the other ducks.",
+                "He found a magic feather."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the gingerbread man run away?",
+            options: [
+                "He did not want to be eaten.",
+                "He wanted to explore the world.",
+                "He was looking for his family.",
+                "He was afraid of the oven."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the prince use to find Cinderella?",
+            options: [
+                "A glass slipper.",
+                "A golden key.",
+                "A magic spell.",
+                "A talking bird."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the boy in 'Jack and the Beanstalk' trade his cow?",
+            options: [
+                "For magic beans.",
+                "For a golden egg.",
+                "For a magic sword.",
+                "To buy food."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the elves do in 'The Elves and the Shoemaker'?",
+            options: [
+                "They made shoes for the shoemaker at night.",
+                "They stole the shoemaker's tools.",
+                "They tricked the shoemaker into leaving his shop.",
+                "They gave the shoemaker a bag of gold."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the boy regret crying wolf?",
+            options: [
+                "When the real wolf came, no one believed him.",
+                "He got caught by the wolf.",
+                "He lost all his sheep.",
+                "His father punished him."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the prince climb Rapunzel’s tower?",
+            options: [
+                "To rescue her after hearing her sing.",
+                "To steal a golden comb.",
+                "To escape from an evil king.",
+                "To challenge a dragon."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the witch use to trick Snow White?",
+            options: [
+                "A poisoned apple.",
+                "A magic mirror.",
+                "A golden comb.",
+                "A sleeping potion."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the tortoise prove in 'The Tortoise and the Hare'?",
+            options: [
+                "Slow and steady wins the race.",
+                "Only the fastest can win a race.",
+                "Hares are naturally lazy.",
+                "Tortoises can run very fast."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did the prince wake Sleeping Beauty?",
+            options: [
+                "With a kiss of true love.",
+                "With a magic spell.",
+                "By playing a magical harp.",
+                "By calling her name three times."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the little mermaid want to become human?",
+            options: [
+                "She fell in love with a human prince.",
+                "She wanted to see the stars.",
+                "She was tired of swimming.",
+                "She was banished from the ocean."
+            ],
+            correct: 0
+        },
+        {
+            question: "What was the main lesson in 'The Goose That Laid the Golden Eggs'?",
+            options: [
+                "Greed can lead to loss.",
+                "Geese can be magical creatures.",
+                "Hard work always leads to success.",
+                "Gold is the key to happiness."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Ali Baba discover in the cave?",
+            options: [
+                "A hidden treasure stolen by thieves.",
+                "A secret passage to another kingdom.",
+                "A sleeping dragon guarding gold.",
+                "A magical lamp."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the villagers ignore the shepherd boy’s cries for help?",
+            options: [
+                "He had lied too many times before.",
+                "They were too busy working.",
+                "They did not see the wolf.",
+                "They wanted to teach him a lesson."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did Beauty’s kindness do to the Beast?",
+            options: [
+                "It broke the curse and turned him into a prince.",
+                "It made him disappear forever.",
+                "It gave him the ability to speak.",
+                "It turned him into a human for one day."
+            ],
+            correct: 0
+        },
+        {
+            question: "How did Tom Thumb escape from the robbers?",
+            options: [
+                "He used his small size to trick them.",
+                "He rode a mouse to safety.",
+                "A fairy saved him.",
+                "He turned into a bird."
+            ],
+            correct: 0
+        },
+        {
+            question: "Why did the ant work so hard in 'The Ant and the Grasshopper'?",
+            options: [
+                "To prepare for winter.",
+                "To impress the queen ant.",
+                "To build the biggest ant hill.",
+                "To win a contest."
+            ],
+            correct: 0
+        },
+        {
+            question: "What did the old woman want in 'The Shoemaker and the Elves'?",
+            options: [
+                "To help the shoemaker for his kindness.",
+                "To buy all the shoes in his shop.",
+                "To steal the magic shoes.",
+                "To sell him magic beans."
+            ],
+            correct: 0
+        }
+
     ]
 };
+function updateProgress() {
+    const answered = document.querySelectorAll('input[type="radio"]:checked').length;
+    const total = document.querySelectorAll('.question-container').length;
+    
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    
+    const percentage = (answered / total) * 100;
+    progressBar.style.width = `${percentage}%`;
+    progressText.textContent = `Questions Answered: ${answered}/${total}`;
+}
+
+function createQuiz(topic) {
+    const allQuestions = quizQuestions[topic];
+    if (!allQuestions) return;
+
+    // Select 5 random questions
+    const questions = allQuestions
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 5);
+
+    const quizContainer = document.getElementById('quizContainer');
+    const progressContainer = document.getElementById('progressContainer');
+    
+    quizContainer.style.display = 'block';
+    progressContainer.style.display = 'block';
+    quizContainer.innerHTML = '';
+
+    questions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.className = 'question-container';
+        // Store the correct answer
+        questionDiv.dataset.correct = q.correct;
+
+        const questionText = document.createElement('div');
+        questionText.className = 'question';
+        questionText.textContent = `${index + 1}. ${q.question}`;
+
+        const optionsDiv = document.createElement('div');
+        optionsDiv.className = 'options';
+
+        q.options.forEach((opt, optIndex) => {
+            const option = document.createElement('label');
+            option.className = 'option';
+
+            const radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.name = `question${index}`;
+            radio.value = optIndex;
+            radio.addEventListener('change', updateProgress);
+
+            const optionText = document.createTextNode(opt);
+            const resultIndicator = document.createElement('span');
+            resultIndicator.className = 'result-indicator';
+            resultIndicator.innerHTML = '✓';
+
+            option.appendChild(radio);
+            option.appendChild(optionText);
+            option.appendChild(resultIndicator);
+            optionsDiv.appendChild(option);
+        });
+
+        questionDiv.appendChild(questionText);
+        questionDiv.appendChild(optionsDiv);
+        quizContainer.appendChild(questionDiv);
+    });
+
+    // Add submit button with updated functionality
+    const submitButton = document.createElement('button');
+    submitButton.className = 'submit-btn';
+    submitButton.textContent = 'Submit Quiz';
+    submitButton.disabled = true; // Start disabled
+
+    // Enable submit button when all questions are answered
+    const enableSubmitButton = () => {
+        const totalQuestions = document.querySelectorAll('.question-container').length;
+        const answeredQuestions = document.querySelectorAll('input[type="radio"]:checked').length;
+        submitButton.disabled = answeredQuestions < totalQuestions;
+    };
+
+    // Add event listener to all radio buttons
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('change', enableSubmitButton);
+    });
+
+    submitButton.onclick = () => {
+        checkAnswers();
+        submitButton.style.display = 'none'; // Hide submit button after submission
+    };
+
+    quizContainer.appendChild(submitButton);
+
+    // Reset progress bar
+    updateProgress();
+}
+
+function checkAnswers() {
+    const questionContainers = document.querySelectorAll('.question-container');
+    let score = 0;
+    
+    questionContainers.forEach((container, index) => {
+        const selectedOption = container.querySelector(`input[name="question${index}"]:checked`);
+        const resultIndicators = container.querySelectorAll('.result-indicator');
+        
+        // Reset all indicators first
+        resultIndicators.forEach(indicator => {
+            indicator.style.display = 'none';
+        });
+
+        if (selectedOption) {
+            const correctAnswer = parseInt(container.dataset.correct);
+            const isCorrect = parseInt(selectedOption.value) === correctAnswer;
+            
+            const indicator = selectedOption.parentElement.querySelector('.result-indicator');
+            indicator.innerHTML = isCorrect ? '✓' : '✗';
+            indicator.className = `result-indicator ${isCorrect ? 'correct' : 'incorrect'}`;
+            indicator.style.display = 'inline';
+            
+            if (isCorrect) score++;
+        }
+    });
+
+    // Create and show the score popup
+    const scorePopup = document.createElement('div');
+    scorePopup.className = 'score-popup';
+    scorePopup.style.display = 'block'; // Add this line to show the popup
+    
+    const scorePopupContent = document.createElement('div');
+    scorePopupContent.className = 'score-popup-content';
+    
+    const scoreDisplay = document.createElement('div');
+    scoreDisplay.className = 'score-display';
+    scoreDisplay.textContent = `Your score: ${score}/${questionContainers.length}`;
+    
+    const tryAgainButton = document.createElement('button');
+    tryAgainButton.className = 'try-again-btn';
+    tryAgainButton.textContent = 'Try Another Round';
+    tryAgainButton.onclick = () => {
+        const currentTopic = document.getElementById('topicSelect').value;
+        createQuiz(currentTopic);
+        scorePopup.remove();
+    };
+    
+    scorePopupContent.appendChild(scoreDisplay);
+    scorePopupContent.appendChild(tryAgainButton);
+    scorePopup.appendChild(scorePopupContent);
+    document.body.appendChild(scorePopup);
+    
+    // Disable all radio buttons after submission
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.disabled = true;
+    });
+}
+
+document.getElementById('topicSelect').addEventListener('change', (e) => {
+    createQuiz(e.target.value);
+});
+
+// Add this to your existing event listeners
+document.querySelector('.quiz-container').addEventListener('change', updateProgress);
+
+// Show popup when page loads
+window.onload = function() {
+  document.getElementById('telegramPopup').style.display = 'block';
+}
+
+// Close popup function
+function closePopup() {
+  document.getElementById('telegramPopup').style.display = 'none';
+}
+
+// Add this to your existing script.js file
+document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', async () => {
+        const number = button.dataset.number;
+        try {
+            await navigator.clipboard.writeText(number);
+            button.textContent = 'Copied!';
+            button.classList.add('copied');
+            setTimeout(() => {
+                button.textContent = 'Copy Number';
+                button.classList.remove('copied');
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy:', err);
+        }
+    });
+});
