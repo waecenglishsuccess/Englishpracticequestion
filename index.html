@@ -4,88 +4,807 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --gray-light: #f3f4f6;
+            --gray: #9ca3af;
+            --gray-dark: #4b5563;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --white: #ffffff;
+            --red: #ef4444;
+            --green: #10b981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--gray-light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .topic-selector {
+            margin-bottom: 2rem;
+        }
+        
+        .select-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        
+        select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--gray);
+            border-radius: 6px;
+            background-color: var(--white);
+            color: var(--text);
+            font-size: 1rem;
+            cursor: pointer;
+            appearance: none;
+        }
+        
+        .select-wrapper::after {
+            content: "▼";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-dark);
+            pointer-events: none;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        button:disabled {
+            background-color: var(--gray);
+            cursor: not-allowed;
+        }
+        
+        .pro-badge {
+            background-color: var(--red);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        
+        .quiz-container {
+            display: none;
+        }
+        
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+        
+        .quiz-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .quiz-progress {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+        
+        .question-container {
+            margin-bottom: 2rem;
+        }
+        
+        .question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .options {
+            display: grid;
+            gap: 0.75rem;
+        }
+        
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid var(--gray);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .option:hover {
+            background-color: var(--gray-light);
+        }
+        
+        .option.selected {
+            border-color: var(--primary);
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+        
+        .option-prefix {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--gray-light);
+            border-radius: 50%;
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+        
+        .selected .option-prefix {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .option-text {
+            flex: 1;
+        }
+        
+        .quiz-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        
+        .back-btn {
+            background-color: var(--gray-light);
+            color: var(--text);
+        }
+        
+        .back-btn:hover {
+            background-color: var(--gray);
+        }
+        
+        .results-container {
+            display: none;
+            text-align: center;
+        }
+        
+        .results-header {
+            margin-bottom: 2rem;
+        }
+        
+        .results-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .results-subtitle {
+            color: var(--text-light);
+        }
+        
+        .score {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 1.5rem 0;
+        }
+        
+        .score-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .restart-btn {
+            background-color: var(--gray-light);
+            color: var(--text);
+        }
+        
+        .pro-tooltip {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        /* Blurred pro options */
+        .pro-option {
+            filter: blur(1px);
+            opacity: 0.7;
+            position: relative;
+            cursor: not-allowed;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <a href="https://waecenglishsuccess.github.io/Englishmainpage/" class="return-home-btn">Return to Homepage</a>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        <h1>English Quiz</h1>
+    <div class="container">
+        <header>
+            <h1>English Quiz Challenge</h1>
+            <p class="description">Test your knowledge with our practice questions</p>
+        </header>
         
-        <!-- Quiz Controls -->
-        <section class="quiz-controls">
-            <select class="topic-select" id="topicSelect">
-                <option value="">Select a Topic</option>
-                <option value="Grammar">Grammar</option>
-                <option value="Vocabulary">Vocabulary</option>
-                <option value="Comprehension">Comprehension</option>
-            </select>
-
-            <div class="progress-container" id="progressContainer">
-                <div class="progress-text" id="progressText">Questions Answered: 0/5</div>
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-        </section>
-
-        <!-- Quiz Content -->
-        <section id="quizContainer" class="quiz-container"></section>
-
-        <!-- Donation Section -->
-        <section id="donate" class="donate-section">
-            <h2 class="donation-title">Help improve literacy across sub-Saharan Africa!</h2>
+        <div id="topic-selector" class="topic-selector">
+            <h2>Select an English Topic</h2>
+            <p class="description">Choose a topic to start your 10-question quiz session</p>
             
-            <div class="donation-image-container">
-                <img src="https://www.educationcannotwait.org/sites/default/files/styles/de2e_standard/public/2022-03/DRC_banner%20%281%29.jpg"
-                     alt="Children in classroom in DRC" 
-                     class="donation-image"
-                     loading="lazy">
+            <div class="select-wrapper">
+                <select id="topic-dropdown">
+                    <option value="" disabled selected>Select a topic...</option>
+                    <option value="grammar">Grammar</option>
+                    <option value="vocabulary">Vocabulary</option>
+                    <option value="comprehension">Comprehension</option>
+                    <option value="literature" class="pro-option">Literature</option>
+                    <option value="writing" class="pro-option">Writing</option>
+                    <option value="phonics" class="pro-option">Phonics</option>
+                    <option value="idioms" class="pro-option">Idioms & Expressions</option>
+                    <option value="spelling" class="pro-option">Spelling</option>
+                </select>
             </div>
             
-            <p class="donation-description">
-                Millions of children lack access to quality education. Donate today to provide free English resources and transform lives.
-            </p>
-        </section>
-    </main>
-
-    <!-- Fixed Elements -->
-    <div class="donate-banner">
-        <a href="https://pricingpage101.github.io/donation/" target="_blank" rel="noopener noreferrer">
-            PLEASE CLICK HERE TO DONATE
-        </a>
-    </div>
-
-    <!-- Telegram Popup -->
-    <div class="telegram-popup" id="telegramPopup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            
-            <div class="popup-header">
-                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
-                     alt="Telegram Logo" 
-                     class="telegram-logo">
-                <h2>🚨 Limited Time Access! 🚨</h2>
+            <button id="start-quiz" disabled>Start Quiz</button>
+        </div>
+        
+        <div id="quiz-container" class="quiz-container">
+            <div class="quiz-header">
+                <div class="quiz-title" id="quiz-title">Grammar Quiz</div>
+                <div class="quiz-progress">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
             </div>
-
-            <div class="popup-body">
-                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
-                <p>Join our exclusive Telegram channel to access:</p>
-                <ul>
-                    <li>📚 Free Video Lectures</li>
-                    <li>📝 Study Materials</li>
-                    <li>👥 Community Support</li>
-                    <li>🎯 Practice Problems</li>
-                </ul>
-                <a href="https://t.me/englishlearning101" class="join-btn" target="_blank">
-                    Join Now Before It's Too Late!
-                </a>
+            
+            <div class="question-container">
+                <div id="question" class="question">Loading question...</div>
+                <div id="options" class="options">
+                    <!-- Options will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button id="back-btn" class="back-btn">Back to Topics</button>
+                <button id="next-btn">Next Question</button>
+            </div>
+        </div>
+        
+        <div id="results-container" class="results-container">
+            <div class="results-header">
+                <div class="results-title">Quiz Complete!</div>
+                <div class="results-subtitle" id="results-topic">Grammar Quiz</div>
+            </div>
+            
+            <div class="score" id="score">7/10</div>
+            <div class="score-text" id="score-text">Great job! You scored 70%</div>
+            
+            <div class="actions">
+                <button id="restart-btn" class="restart-btn">Try Another Topic</button>
+                <button id="retry-btn">Retry This Topic</button>
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    
+    <div id="pro-tooltip" class="pro-tooltip">UPGRADE TO PRO</div>
+    
+    <script>
+        // DOM Elements
+        const topicSelector = document.getElementById('topic-selector');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultsContainer = document.getElementById('results-container');
+        const topicDropdown = document.getElementById('topic-dropdown');
+        const startQuizBtn = document.getElementById('start-quiz');
+        const backBtn = document.getElementById('back-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const retryBtn = document.getElementById('retry-btn');
+        const quizTitle = document.getElementById('quiz-title');
+        const currentQuestionSpan = document.getElementById('current-question');
+        const totalQuestionsSpan = document.getElementById('total-questions');
+        const questionElement = document.getElementById('question');
+        const optionsElement = document.getElementById('options');
+        const resultsTopic = document.getElementById('results-topic');
+        const scoreElement = document.getElementById('score');
+        const scoreTextElement = document.getElementById('score-text');
+        const proTooltip = document.getElementById('pro-tooltip');
+        
+        // Quiz state
+        let currentTopic = '';
+        let questions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedAnswers = [];
+        
+        // Question banks for each topic
+        const questionBanks = {
+            grammar: [
+                {
+                    question: "Which of the following sentences uses the correct form of the verb?",
+                    options: ["She don't like ice cream.", "She doesn't likes ice cream.", "She doesn't like ice cream.", "She not like ice cream."],
+                    answer: 2
+                },
+                {
+                    question: "Identify the correct sentence:",
+                    options: ["Between you and I, this is a secret.", "Between you and me, this is a secret.", "Between yourself and I, this is a secret.", "Between yourself and me, this is a secret."],
+                    answer: 1
+                },
+                {
+                    question: "Which sentence contains a dangling modifier?",
+                    options: ["Walking through the forest, I saw a deer.", "Walking through the forest, a deer was spotted.", "While I was walking through the forest, a deer appeared.", "The deer was spotted while walking through the forest."],
+                    answer: 3
+                },
+                {
+                    question: "Which of these is a compound sentence?",
+                    options: ["The cat slept on the sofa while the dog slept on the floor.", "The cat slept on the sofa, and the dog slept on the floor.", "Although the cat slept on the sofa, the dog slept on the floor.", "The cat sleeping on the sofa was comfortable."],
+                    answer: 1
+                },
+                {
+                    question: "What is the past participle of 'begin'?",
+                    options: ["Began", "Begun", "Beginning", "Beginned"],
+                    answer: 1
+                },
+                {
+                    question: "Which sentence uses the apostrophe correctly?",
+                    options: ["The dog wagged it's tail.", "The dog's wagged their tails.", "The dogs' wagged their tails.", "The dogs wagged their tails."],
+                    answer: 3
+                },
+                {
+                    question: "Which word is an adverb in the sentence: 'She spoke quietly during the meeting.'?",
+                    options: ["She", "Spoke", "Quietly", "Meeting"],
+                    answer: 2
+                },
+                {
+                    question: "Which of the following is a complete sentence?",
+                    options: ["When the rain stopped.", "Because it was raining.", "After the movie ended.", "The rain stopped."],
+                    answer: 3
+                },
+                {
+                    question: "Which sentence contains a split infinitive?",
+                    options: ["To boldly go where no one has gone before.", "To go boldly where no one has gone before.", "Boldly to go where no one has gone before.", "To go where no one has boldly gone before."],
+                    answer: 0
+                },
+                {
+                    question: "Which of these is the correct comparative form of 'good'?",
+                    options: ["Gooder", "More good", "Better", "Goodest"],
+                    answer: 2
+                },
+                {
+                    question: "Which sentence uses the subjunctive mood correctly?",
+                    options: ["I wish I was taller.", "I wish I were taller.", "I wish I am taller.", "I wish I be taller."],
+                    answer: 1
+                },
+                {
+                    question: "Which sentence uses parallel structure correctly?",
+                    options: ["He likes swimming, running, and to bike.", "He likes to swim, to run, and biking.", "He likes swimming, to run, and biking.", "He likes swimming, running, and biking."],
+                    answer: 3
+                },
+                {
+                    question: "What type of clause is underlined in the sentence: 'The book that I borrowed from the library is overdue.'?",
+                    options: ["Independent clause", "Noun clause", "Adverbial clause", "Relative clause"],
+                    answer: 3
+                },
+                {
+                    question: "Which of the following sentences contains a gerund?",
+                    options: ["I enjoy running in the park.", "I run in the park every day.", "I will run in the park tomorrow.", "I have run in the park."],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence contains a correctly placed comma?",
+                    options: ["After dinner, we went for a walk.", "After dinner we, went for a walk.", "After, dinner we went for a walk.", "After dinner we went, for a walk."],
+                    answer: 0
+                }
+            ],
+            vocabulary: [
+                {
+                    question: "What is the meaning of 'ubiquitous'?",
+                    options: ["Rare", "Present everywhere", "Unnecessary", "Unclear"],
+                    answer: 1
+                },
+                {
+                    question: "Which word is a synonym for 'benevolent'?",
+                    options: ["Kind", "Cruel", "Indifferent", "Selfish"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'ephemeral' mean?",
+                    options: ["Lasting forever", "Solid", "Short-lived", "Important"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the antonym for 'verbose':",
+                    options: ["Wordy", "Concise", "Eloquent", "Detailed"],
+                    answer: 1
+                },
+                {
+                    question: "What does the word 'pernicious' most closely mean?",
+                    options: ["Harmless", "Beneficial", "Harmful", "Nutritious"],
+                    answer: 2
+                },
+                {
+                    question: "Which word best completes this sentence: 'The detective found several _____ at the crime scene.'",
+                    options: ["Clues", "Hints", "Signs", "Evidences"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'amalgamate' mean?",
+                    options: ["To separate", "To combine", "To destroy", "To analyze"],
+                    answer: 1
+                },
+                {
+                    question: "Which word is misspelled?",
+                    options: ["Necessary", "Accommodate", "Supercede", "Definitely"],
+                    answer: 2
+                },
+                {
+                    question: "What is the definition of 'obsequious'?",
+                    options: ["Obedient to an excessive degree", "Unnecessarily rude", "Slightly annoyed", "Extremely angry"],
+                    answer: 0
+                },
+                {
+                    question: "Choose the correct meaning of 'laconic':",
+                    options: ["Using many words", "Missing details", "Using few words", "Extremely descriptive"],
+                    answer: 2
+                },
+                {
+                    question: "What does 'quintessential' mean?",
+                    options: ["Having five parts", "Representing the most perfect example", "Extremely rare", "Ancient"],
+                    answer: 1
+                },
+                {
+                    question: "Which of these words means 'to make amends'?",
+                    options: ["Atone", "Repent", "Forgive", "Forget"],
+                    answer: 0
+                },
+                {
+                    question: "What is the meaning of 'equivocate'?",
+                    options: ["To speak directly", "To speak clearly", "To speak truthfully", "To use ambiguous language"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct meaning of 'paradigm':",
+                    options: ["A twenty-cent coin", "A model or pattern", "A medical procedure", "A mathematical equation"],
+                    answer: 1
+                },
+                {
+                    question: "What does 'myriad' mean?",
+                    options: ["A small number", "A specific number", "A large, indefinite number", "Zero"],
+                    answer: 2
+                }
+            ],
+            comprehension: [
+                {
+                    question: "Read the passage: 'The sun was setting, casting long shadows across the field. Sarah watched as the sky turned from blue to orange, then to deep purple. She knew it was time to go home.' What time of day is described?",
+                    options: ["Morning", "Noon", "Evening", "Midnight"],
+                    answer: 2
+                },
+                {
+                    question: "In the sentence: 'Despite the heavy rain, he insisted on walking rather than taking a taxi.' What can we infer about 'he'?",
+                    options: ["He enjoys getting wet", "He has no money for a taxi", "He is stubborn or determined", "He lives very close by"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'Mark looked at his watch, surprised that it was already midnight. He had been working on his project for six hours straight without a break.' What is the main idea?",
+                    options: ["Mark is always late", "Mark loses track of time when working", "Mark's watch is broken", "Mark works night shifts"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Although he had prepared thoroughly, James was still nervous about his presentation.' Which statement is true?",
+                    options: ["James did not prepare enough", "Preparation eliminated James's nervousness", "James was nervous despite his preparation", "James gives presentations frequently"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The new policy was met with resistance. Some employees complained that it was too restrictive, while others thought it didn't go far enough.' What can be concluded?",
+                    options: ["All employees disliked the policy", "The policy received mixed reactions", "The policy was eventually withdrawn", "Most employees supported the policy"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Having finished her homework, Elena decided to watch TV.' What happened first?",
+                    options: ["Elena watched TV", "Elena decided to watch TV", "Elena finished her homework", "Elena started her homework"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'Dr. Lee's research findings contradicted previous studies on the subject. Initially, his colleagues were skeptical, but the evidence was compelling.' What does this imply about Dr. Lee's research?",
+                    options: ["It was eventually accepted", "It was completely rejected", "It was poorly conducted", "It was identical to previous studies"],
+                    answer: 0
+                },
+                {
+                    question: "In the sentence: 'Not only did she win the race, but she also broke the school record.' What is emphasized?",
+                    options: ["She barely won the race", "She won by a small margin", "She achieved two accomplishments", "She was expected to lose"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The museum was closing in ten minutes. John hurried through the final exhibit, glancing quickly at the artifacts without reading their descriptions.' Why was John hurrying?",
+                    options: ["He was bored with the museum", "He had limited time before closing", "He had seen the artifacts before", "He was meeting someone outside"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Despite being exhausted, the marathon runners continued to the finish line.' What motivated the runners?",
+                    options: ["Fear of failure", "Desire to rest", "Determination to finish", "External pressure"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The old house stood abandoned for decades. Its windows were broken, and vines crept up its walls. Nevertheless, Maya saw its potential.' What is Maya's attitude toward the house?",
+                    options: ["Fear", "Optimism", "Disgust", "Indifference"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'The chef, who had trained in Paris, prepared an exquisite meal for the guests.' Where did the chef train?",
+                    options: ["In a local restaurant", "At a cooking school", "In Paris", "At home"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The climate conference ended without an agreement. Delegates from industrialized countries and those from developing nations could not reconcile their differences.' What was the problem?",
+                    options: ["Lack of interest in climate issues", "Disagreement between different groups", "Poor organization of the conference", "Insufficient time for discussions"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Before submitting his application, Michael proofread it several times.' What does this suggest about Michael?",
+                    options: ["He is indecisive", "He is careful and thorough", "He is easily distracted", "He is overly confident"],
+                    answer: 1
+                },
+                {
+                    question: "Read the passage: 'The company announced record profits. However, it also revealed plans to lay off 15% of its workforce next month.' How can the company's actions be best described?",
+                    options: ["Consistent and transparent", "Contradictory and concerning", "Strategic and necessary", "Innovative and forward-thinking"],
+                    answer: 1
+                }
+            ]
+        };
+        
+        // Initialize the quiz
+        function init() {
+            // Enable/disable start button based on topic selection
+            topicDropdown.addEventListener('change', function() {
+                const selectedOption = this.options[this.selectedIndex];
+                currentTopic = this.value;
+                
+                if (currentTopic && !selectedOption.classList.contains('pro-option')) {
+                    startQuizBtn.disabled = false;
+                } else {
+                    startQuizBtn.disabled = true;
+                }
+            });
+            
+            // Handle PRO option selection
+            topicDropdown.addEventListener('mousedown', function(event) {
+                const select = this;
+                setTimeout(function() {
+                    const selectedOption = select.options[select.selectedIndex];
+                    if (selectedOption && selectedOption.classList.contains('pro-option')) {
+                        showProTooltip(event);
+                        // Reset selection to previous or empty
+                        select.value = currentTopic || "";
+                    }
+                }, 100);
+            });
+            
+            // Start quiz button click handler
+            startQuizBtn.addEventListener('click', startQuiz);
+            
+            // Back button click handler
+            backBtn.addEventListener('click', function() {
+                showTopicSelector();
+            });
+            
+            // Next button click handler
+            nextBtn.addEventListener('click', goToNextQuestion);
+            
+            // Restart button click handler
+            restartBtn.addEventListener('click', function() {
+                showTopicSelector();
+            });
+            
+            // Retry button click handler
+            retryBtn.addEventListener('click', function() {
+                startQuiz();
+            });
+        }
+        
+        // Start the quiz with the selected topic
+        function startQuiz() {
+            // Reset quiz state
+            currentQuestionIndex = 0;
+            score = 0;
+            selectedAnswers = Array(10).fill(null);
+            
+            // Get 10 random questions for the selected topic
+            questions = getRandomQuestions(questionBanks[currentTopic], 10);
+            
+            // Update UI
+            quizTitle.textContent = getTopicName(currentTopic) + " Quiz";
+            totalQuestionsSpan.textContent = questions.length;
+            
+            // Show the quiz container
+            topicSelector.style.display = 'none';
+            quizContainer.style.display = 'block';
+            resultsContainer.style.display = 'none';
+            
+            // Load the first question
+            loadQuestion();
+        }
+        
+        // Load the current question
+        function loadQuestion() {
+            const question = questions[currentQuestionIndex];
+            currentQuestionSpan.textContent = currentQuestionIndex + 1;
+            
+            // Update question text
+            questionElement.textContent = question.question;
+            
+            // Clear previous options
+            optionsElement.innerHTML = '';
+            
+            // Add new options
+            question.options.forEach((option, index) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                if (selectedAnswers[currentQuestionIndex] === index) {
+                    optionElement.classList.add('selected');
+                }
+                
+                optionElement.innerHTML = `
+                    <div class="option-prefix">${String.fromCharCode(65 + index)}</div>
+                    <div class="option-text">${option}</div>
+                `;
+                
+                optionElement.addEventListener('click', () => selectOption(index));
+                optionsElement.appendChild(optionElement);
+            });
+            
+            // Update button text based on question
+            if (currentQuestionIndex === questions.length - 1) {
+                nextBtn.textContent = 'Finish Quiz';
+            } else {
+                nextBtn.textContent = 'Next Question';
+            }
+        }
+        
+        // Select an option
+        function selectOption(optionIndex) {
+            selectedAnswers[currentQuestionIndex] = optionIndex;
+            
+            // Update UI to show selected option
+            const options = optionsElement.querySelectorAll('.option');
+            options.forEach((option, index) => {
+                if (index === optionIndex) {
+                    option.classList.add('selected');
+                } else {
+                    option.classList.remove('selected');
+                }
+            });
+        }
+        
+        // Go to next question or finish quiz
+        function goToNextQuestion() {
+            // Check if an option is selected
+            if (selectedAnswers[currentQuestionIndex] === null) {
+                alert('Please select an answer before proceeding.');
+                return;
+            }
+            
+            // Check if current answer is correct
+            if (selectedAnswers[currentQuestionIndex] === questions[currentQuestionIndex].answer) {
+                score++;
+            }
+            
+            // Go to next question or finish
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                finishQuiz();
+            }
+        }
+        
+        // Finish quiz and show results
+        function finishQuiz() {
+            // Calculate score
+            const percentage = (score / questions.length) * 100;
+            
+            // Update results UI
+            resultsTopic.textContent = getTopicName(currentTopic) + " Quiz";
+            scoreElement.textContent = `${score}/${questions.length}`;
+            scoreTextElement.textContent = `You scored ${percentage}%`;
+            
+            // Show results
+            quizContainer.style.display = 'none';
+            resultsContainer.style.display = 'block';
+        }
+        
+        // Show topic selector
+        function showTopicSelector() {
+            topicSelector.style.display = 'block';
+            quizContainer.style.display = 'none';
+            resultsContainer.style.display = 'none';
+        }
+        
+        // Get random questions from a question bank
+        function getRandomQuestions(bank, count) {
+            const shuffled = [...bank].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        // Get topic name from topic code
+        function getTopicName(topic) {
+            switch(topic) {
+                case 'grammar': return 'Grammar';
+                case 'vocabulary': return 'Vocabulary';
+                case 'comprehension': return 'Comprehension';
+                default: return '';
+            }
+        }
+        
+        // Show PRO tooltip
+        function showProTooltip(event) {
+            proTooltip.style.left = `${event.pageX}px`;
+            proTooltip.style.top = `${event.pageY - 40}px`;
+            proTooltip.style.opacity = '1';
+            
+            setTimeout(() => {
+                proTooltip.style.opacity = '0';
+            }, 2000);
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', init);
+    </script>
 </body>
 </html>
